@@ -1,0 +1,49 @@
+#Homepage {
+  #Section1 {
+    height: 790px;
+    position: relative;
+    border-bottom: 3px solid black;
+    video {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      object-fit: cover;
+      pointer-events: none;
+      border-bottom: 5px solid white;
+    }
+    .content_wrapper {
+      padding-top: 135px;
+      position: relative;
+      height: 100%;
+      text-align: center;
+      .logo_lg {
+        width: 661px;
+        height: 183px;
+        object-fit: cover;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      h1 {
+        margin: 0px;
+      }
+      .content_footer {
+        width: 601px;
+        margin: auto;
+        img {
+            position: absolute;
+        }
+        .btn_content_footer {
+          font-size: 14px;
+          width: 100%;
+          color: white;
+          transition: all 0.2s ease, visibility 0s;
+          background: #85c43f;
+          border-radius: 15px;
+          box-shadow: 0.14px 4px 17px 0 #ffffff;
+          display: 100%;
+        }
+      }
+    }
+  }
+}
