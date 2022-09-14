@@ -1,0 +1,14 @@
+footer#Footer {
+  background: #85c43f;
+  box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.55);
+  margin-top: 200px;
+  padding-top: 25px;
+  padding-bottom: 65px;
+  .footer_light_text {
+    padding-top: 11px;
+    color: rgb(112,112,112);
+    p{
+        letter-spacing: .3em;
+    }
+  }
+}

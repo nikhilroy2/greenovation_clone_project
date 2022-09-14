@@ -30,8 +30,18 @@
       .content_footer {
         width: 601px;
         margin: auto;
+        position: relative;
+        top: 86px;
         img {
-            position: absolute;
+          position: absolute;
+        }
+        .img_lg {
+          left: 0px;
+          bottom: 85%;
+        }
+        .img_sm {
+          right: 0px;
+          bottom: 85%;
         }
         .btn_content_footer {
           font-size: 14px;
@@ -41,8 +51,37 @@
           background: #85c43f;
           border-radius: 15px;
           box-shadow: 0.14px 4px 17px 0 #ffffff;
-          display: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+          letter-spacing: 0.1em;
         }
+      }
+    }
+  }
+  #Section2 {
+    padding-top: 50px;
+    .text_content {
+      font-family: "Montserrat", sans-serif;
+      font-size: 24px;
+      text-align: center;
+      width: 1018px;
+      margin: auto;
+      color: rgb(0, 0, 0);
+    }
+    .img_wrapper {
+      width: calc(100% - 353px * 2);
+      margin: auto;
+      img {
+        position: relative;
+        z-index: 2;
+        filter: url(https://static.wixstatic.com/media/d307ba_a9ab04576f1b48f5bbfc82278fa8f486~mv2.png/v1/fill/w_353,h_433,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon.png);
+      }
+      .img_animated {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }

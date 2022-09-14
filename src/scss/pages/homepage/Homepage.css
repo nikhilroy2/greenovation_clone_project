@@ -38,10 +38,22 @@
 #Homepage #Section1 .content_wrapper .content_footer {
   width: 601px;
   margin: auto;
+  position: relative;
+  top: 86px;
 }
 
 #Homepage #Section1 .content_wrapper .content_footer img {
   position: absolute;
+}
+
+#Homepage #Section1 .content_wrapper .content_footer .img_lg {
+  left: 0px;
+  bottom: 85%;
+}
+
+#Homepage #Section1 .content_wrapper .content_footer .img_sm {
+  right: 0px;
+  bottom: 85%;
 }
 
 #Homepage #Section1 .content_wrapper .content_footer .btn_content_footer {
@@ -54,6 +66,48 @@
   border-radius: 15px;
   -webkit-box-shadow: 0.14px 4px 17px 0 #ffffff;
           box-shadow: 0.14px 4px 17px 0 #ffffff;
-  display: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  letter-spacing: 0.1em;
+}
+
+#Homepage #Section2 {
+  padding-top: 50px;
+}
+
+#Homepage #Section2 .text_content {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  width: 1018px;
+  margin: auto;
+  color: black;
+}
+
+#Homepage #Section2 .img_wrapper {
+  width: calc(100% - 353px * 2);
+  margin: auto;
+}
+
+#Homepage #Section2 .img_wrapper img {
+  position: relative;
+  z-index: 2;
+  -webkit-filter: url(https://static.wixstatic.com/media/d307ba_a9ab04576f1b48f5bbfc82278fa8f486~mv2.png/v1/fill/w_353,h_433,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon.png);
+          filter: url(https://static.wixstatic.com/media/d307ba_a9ab04576f1b48f5bbfc82278fa8f486~mv2.png/v1/fill/w_353,h_433,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon.png);
+}
+
+#Homepage #Section2 .img_wrapper .img_animated {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=Homepage.css.map */
