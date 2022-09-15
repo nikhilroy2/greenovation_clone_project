@@ -30,7 +30,7 @@ header#Header {
   --alpha-txth: 1;
   --alpha-txts: 1;
   --boxShadowToggleOn-shd: none;
- 
+
   .header_position {
     z-index: 2000;
     position: fixed !important;
@@ -116,6 +116,7 @@ header#Header {
       align-items: center;
       height: 100%;
       width: 100%;
+      z-index: 1;
       svg {
         margin-left: 13px;
       }
@@ -125,8 +126,15 @@ header#Header {
     }
     .dropdown_action {
       position: absolute;
-      top: 100%;
-      display: none;
+      justify-content: flex-start;
+      top: 96%;
+      background: rgba(0, 0, 0, 0.26);
+      border-radius: 0 0 15px 15px;
+      padding-left: 17px;
+      z-index: 2;
+      &:hover {
+        background: #323232;
+      }
     }
   }
 }

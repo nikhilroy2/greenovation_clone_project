@@ -144,6 +144,7 @@ header#Header .dropdown_leng .dropdown_item {
           align-items: center;
   height: 100%;
   width: 100%;
+  z-index: 1;
 }
 
 header#Header .dropdown_leng .dropdown_item svg {
@@ -156,7 +157,17 @@ header#Header .dropdown_leng img {
 
 header#Header .dropdown_leng .dropdown_action {
   position: absolute;
-  top: 100%;
-  display: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  top: 96%;
+  background: rgba(0, 0, 0, 0.26);
+  border-radius: 0 0 15px 15px;
+  padding-left: 17px;
+  z-index: 2;
+}
+
+header#Header .dropdown_leng .dropdown_action:hover {
+  background: #323232;
 }
 /*# sourceMappingURL=Header.css.map */

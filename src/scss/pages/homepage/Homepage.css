@@ -77,6 +77,13 @@
           align-items: center;
   height: 40px;
   letter-spacing: 0.1em;
+  z-index: 2;
+}
+
+#Homepage #Section1 .content_wrapper .content_footer .btn_content_footer:hover {
+  color: #85c43f;
+  border: 2px solid #85c43f;
+  background: white;
 }
 
 #Homepage #Section2 {
@@ -106,8 +113,28 @@
 
 #Homepage #Section2 .img_wrapper .img_animated {
   position: absolute;
-  left: 50%;
+  left: 30%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+#Homepage #Section2 .img_wrapper .img_animated.aos-animate {
+  left: 50%;
+  opacity: 1;
+}
+
+#Homepage #Section2 .content_description {
+  width: 981px;
+  margin: auto;
+  position: relative;
+}
+
+#Homepage #Section2 .content_description .drawing {
+  position: absolute;
+  right: 0px;
+  top: 0;
 }
 /*# sourceMappingURL=Homepage.css.map */

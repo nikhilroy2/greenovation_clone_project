@@ -56,6 +56,12 @@
           align-items: center;
           height: 40px;
           letter-spacing: 0.1em;
+          z-index: 2;
+          &:hover{
+            color: #85c43f;
+            border: 2px solid #85c43f;
+            background: white;
+          }
         }
       }
     }
@@ -80,8 +86,24 @@
       }
       .img_animated {
         position: absolute;
-        left: 50%;
+        left: 30%;
         transform: translateX(-50%);
+        transition: .5s;
+        opacity: 0;
+        &.aos-animate {
+          left: 50%;
+          opacity: 1;
+        }
+      }
+    }
+    .content_description{
+      width: 981px;
+      margin: auto;
+      position: relative;
+      .drawing{
+        position: absolute;
+        right: 0px;
+        top: 0;
       }
     }
   }

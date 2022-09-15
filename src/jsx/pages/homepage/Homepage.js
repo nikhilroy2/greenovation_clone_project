@@ -1,10 +1,16 @@
 import React from 'react';
-import '../../../scss/pages/homepage/Homepage.css'
+import AOS from 'aos';
+import '../../../scss/pages/homepage/Homepage.css';
+
+AOS.init();
+
 function Homepage(props) {
     return (
         <div id='Homepage'>
             <Section1></Section1>
             <Section2></Section2>
+            <Section3></Section3>
+
         </div>
     );
 }
@@ -51,10 +57,31 @@ const Section2 = () => {
             <div className="d-flex justify-content-end flex-grow-1">
                 <img className='' src="https://static.wixstatic.com/media/d307ba_766e1eb74e9944d2aa78ba2c83f6eeef~mv2.png/v1/fill/w_324,h_398,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon_edited.png" alt="greenovation logo icon_edited.png" style={{ width: '324px', height: '398px', objectFit: 'cover', objectPosition: '50% 50%' }} />
             </div>
-            <div className="img_animated">
+            <div className="img_animated" data-aos="fade-right" data-aos-once="true" >
                 <img src="https://static.wixstatic.com/media/670a64_d7a7f2c910f844fd8049fe77d8da4c02~mv2.jpg/v1/crop/x_646,y_2285,w_3670,h_2531/fill/w_749,h_516,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/GREENOVATION%205%20STEPS.jpg" alt="GREENOVATION 5 STEPS.jpg" style={{ width: '749px', height: '516px', objectFit: 'cover', objectPosition: '50% 50%' }} />
             </div>
-            <img src="" alt="" />
+        </div>
+        <br /><br /><br /><br />
+        <br />
+
+        <p className="font_7" style={{ lineHeight: '1.7em', textAlign: 'center', fontSize: '24px' }}><span style={{ color: '#85C43F' }}><span style={{ fontWeight: 'bold' }}><span style={{ fontSize: '20px', letterSpacing: '0.05em' }}>Partizipiere am Erfolg des i</span><span style={{ fontSize: '20px', letterSpacing: '0.0416667em' }}>nnovativsten</span><span style={{ fontSize: '20px', letterSpacing: '0.05em' }}>&nbsp;Marktteilnehmers im Crowdgrowing.</span></span></span></p>
+        <div className="content_description">
+            <img src="https://static.wixstatic.com/media/d307ba_b3ab9914ccc341bbb3eb47f35c0f627c~mv2.png/v1/fill/w_484,h_594,al_c,q_85,enc_auto/greenovation%20logo%20icon%20hex%20gry.png" alt="" className="drawing" />
+            <p className="font_7" style={{ fontSize: '20px', lineHeight: '1.7em', textAlign: 'center' }}><span style={{ letterSpacing: '0.05em' }}><span style={{ fontSize: '20px' }}>Wie klingt das, wenn wir für dich arbeiten und du das Geld verdienst? Genau das<br />
+                machen wir! Jeder auf unserer Plattform verkaufte Pflanzenplatz entspricht einem physisch vorhandenen Platz in unserer Produktionsanlage. Wir kümmern uns um deine Pflanze in vollem Umfang und verkaufen nach erfolgter Ernte das Produkt. Nach Abzug der laufenden Kosten, wird der Gewinn zwischen Greenovation und dir 50/50 aufgeteilt.<br />
+                Als einziges Unternehmen in der Schweiz produzieren wir unsere Stecklinge mit dem <span className="color_23"><span style={{ fontWeight: 'bold' }}>In Vitro</span></span> Verfahren und bestätigen den Besitz der Pflanze mit einem <span className="color_23"><span style={{ fontWeight: 'bold' }}>NFT</span></span>. &nbsp;Wir garantieren<br />
+                eine Rendite von <span style={{ fontWeight: 'bold' }}>mindestens 10%, dies sicher, stabil und langfristig</span>, was im aktuellen Finanzumfeld herausragend ist.<br />
+                Unser State oft the Art Equipment und unsere langjährige Erfahrung optimieren<br />
+                den Ertrag langfristig. Wir ernten seit Jahren im Durchschnitt 22.7 % mehr als<br />
+                unsere Mitbewerber.</span></span></p>
         </div>
     </section>
+}
+
+const Section3 = () => {
+    return (
+        <section id="Section3">
+
+        </section>
+    )
 }
