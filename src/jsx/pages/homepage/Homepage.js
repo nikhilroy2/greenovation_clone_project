@@ -11,6 +11,7 @@ function Homepage(props) {
             <Section2></Section2>
             <Section3></Section3>
             <Section4></Section4>
+            <Section5></Section5>
         </div>
     );
 }
@@ -159,10 +160,74 @@ const Section3 = () => {
 
         </section>
     )
+
 }
 
 const Section4 = () => {
     return <section id="Section4">
+        <img className='drawing' src={require('../../../img/pages/homepage/bg_section.webp')} alt="bg" />
+        <div className="section_wrapper_sm">
+            <div className="section_header d-flex align-items-center">
+                <h1 className="font_0" style={{ fontSize: '30px' }}><span style={{ fontSize: '30px' }}>WIR LEBEN TRANSPARENZ</span></h1>
+                <img src={require('../../../img/icons/plus.webp')} alt="img" />
+            </div>
+            <div className="section_body">
+                <div className="body_content">
+                    <div className='wrapper'>
+                        <ul className="font_7 list_disc my-0" style={{ fontSize: '18px', textAlign: 'left' }}>
+                            <li>
+                                <p className="font_7 my-0" style={{ fontSize: '18px' }}><span style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.1em' }}>Du kannst jederzeit per Livestream verfolgen wie deine Pflanzen wachsen.</span></span></p>
+                            </li>
+                        </ul>
+                        <p className="font_7 my-0" style={{ fontSize: '18px' }}><span style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.1em' }}><span className="wixGuard">​</span></span></span></p>
+                        <ul className="font_7 list_disc my-0" style={{ fontSize: '18px', textAlign: 'left' }}>
+                            <li>
+                                <p className="font_7 my-0" style={{ fontSize: '18px' }}><span style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.1em' }}>Wir bauen nur in der Schweiz an, was für dich bedeutet, dass du dir<br />
+                                    unsere Anlage gerne auch persönlich anschauen kannst.</span></span></p>
+                            </li>
+                        </ul>
+                        <p className="font_7 my-0" style={{ fontSize: '18px' }}><span style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.1em' }}><span className="wixGuard">​</span></span></span></p>
+                        <ul className="font_7 list_disc my-0" style={{ fontSize: '18px', textAlign: 'left' }}>
+                            <li>
+                                <p className="font_7 my-0" style={{ fontSize: '18px' }}><span style={{ fontSize: '18px' }}>I<span style={{ letterSpacing: '0.1em' }}>n deinem Login siehst du jederzeit wie viel Gewinn du bereits erwirtschaftet hast. Du hast die Möglichkeit deinen Ertrag auszahlen zu lassen oder in weitere Pflanzen zu investieren. So kannst du dir ein rentables Business aufbauen.</span></span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <br /><br /><br /><br /><br />
+                    <div className="action_box">
+                        <a href="#" className="stable_green_btn">
+                            PFLANZE KAUFEN
+                        </a>
+                    </div>
+                    <div className="img_box_m">
+                        <img src={require('../../../img/pages/homepage/transparent.webp')} alt="img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
 
+const Section5 = () => {
+    return <section id="Section5">
+        <img src={require('../../../img/pages/homepage/mv2.webp')} alt="" className="drawing" />
+        <div className="section_header">
+            <h1 className="font_0 position-relative" style={{ fontSize: '30px', textAlign: 'right' }}>
+                <span style={{ fontSize: '30px' }}>MEHR GEWINN DURCH
+                    <span style={{ fontWeight: 'bold' }}><span style={{ fontWeight: 'bold' }} className="color_23"> IN VITRO</span></span></span>
+                <img style={{ position: 'absolute', right: '-80px', top: '-20px' }} src={require('../../../img/icons/icon_side.webp')} alt="img" />
+            </h1>
+        </div>
+        <div className="section_body">
+            <p className="font_8" style={{ lineHeight: '1.7em', textAlign: 'right', fontSize: '16px' }}>
+                <span style={{ letterSpacing: '0.05em' }}>
+                    Seit über 4 Jahren haben wir geforscht und unsere Prozesse verfeinert. Wir sind in der Schweiz die Einzigen im Bereich Cannabis, welche die Pflanzen per «in vitro» in der Lage sind zu vermehren. Was bedeutet in vitro? Die Pflanzen werden im Labor unter sterilen Bedingungen geklont. Dadurch sind sie genetisch verjüngt und stabiler, verfügen über das maximale genetische Potential der Sorte und sind garantiert frei von jeglichen Krankheiten, Schädlingen und Viren. Mit dieser zukunftsweisenden Technik haben wir gegenüber den Mitbewerbern einen entscheidenden Wissens- und Erfahrungsvorsprung in der Produktion und Qualität, wovon du direkt profitierst.</span></p>
+
+            <div className="action_btn_wrapper d-flex justify-content-end mt-5">
+                <a href="#" className='stable_green_btn'>
+                    MEHR INFOS
+                </a>
+            </div>
+        </div>
     </section>
 }

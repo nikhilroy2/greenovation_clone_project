@@ -1,0 +1,15 @@
+#LiveChat {
+  .chat_btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(133, 196, 63);
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    box-shadow: 0 0 3px 0 hsla(0, 1.4%, 71%, 0.5);
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    border: 0;
+    z-index: 1000;
+  }
+}

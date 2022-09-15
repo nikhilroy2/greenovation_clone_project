@@ -3,7 +3,6 @@
   position: relative;
   border-bottom: 3px solid black;
 }
-
 #Homepage #Section1 video {
   position: absolute;
   width: 100%;
@@ -15,14 +14,12 @@
   border-bottom: 5px solid white;
   opacity: 0.75;
 }
-
 #Homepage #Section1 .content_wrapper {
   padding-top: 135px;
   position: relative;
   height: 100%;
   text-align: center;
 }
-
 #Homepage #Section1 .content_wrapper .logo_lg {
   width: 661px;
   height: 183px;
@@ -31,151 +28,115 @@
   display: inline-block;
   margin-bottom: 20px;
 }
-
 #Homepage #Section1 .content_wrapper h1 {
   margin: 0px;
 }
-
 #Homepage #Section1 .content_wrapper .content_footer {
   width: 601px;
   margin: auto;
   position: relative;
   top: 86px;
 }
-
 #Homepage #Section1 .content_wrapper .content_footer .img_lg,
 #Homepage #Section1 .content_wrapper .content_footer .img_sm {
   position: absolute;
   -webkit-animation: 1s linear img_bg forwards;
           animation: 1s linear img_bg forwards;
-  -webkit-transform-origin: center bottom;
-          transform-origin: center bottom;
+  transform-origin: center bottom;
 }
-
 @-webkit-keyframes img_bg {
   0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    transform: scaleY(0);
   }
   100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    transform: scaleY(1);
   }
 }
-
 @keyframes img_bg {
   0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    transform: scaleY(0);
   }
   100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    transform: scaleY(1);
   }
 }
-
 #Homepage #Section1 .content_wrapper .content_footer .img_lg {
   left: 0px;
   bottom: 70%;
 }
-
 #Homepage #Section1 .content_wrapper .content_footer .img_sm {
   right: 0px;
   bottom: 80%;
 }
-
 #Homepage #Section1 .content_wrapper .content_footer .btn_content_footer {
   font-size: 14px;
   width: 100%;
   color: white;
-  -webkit-transition: all 0.2s ease, visibility 0s;
   transition: all 0.2s ease, visibility 0s;
   background: #85c43f;
   border-radius: 15px;
-  -webkit-box-shadow: 0.14px 4px 17px 0 #ffffff;
-          box-shadow: 0.14px 4px 17px 0 #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-shadow: 0.14px 4px 17px 0 #ffffff;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 40px;
   letter-spacing: 0.1em;
   position: relative;
   z-index: 2;
 }
-
 #Homepage #Section1 .content_wrapper .content_footer .btn_content_footer:hover {
   color: #85c43f;
   border: 2px solid #85c43f;
   background: white;
 }
-
 #Homepage #Section2 {
   padding-top: 50px;
 }
-
 #Homepage #Section2 .text_content {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   text-align: center;
   width: 1018px;
   margin: auto;
-  color: black;
+  color: rgb(0, 0, 0);
 }
-
 #Homepage #Section2 .img_wrapper {
-  width: calc(100% - 353px * 2);
+  width: calc(100% - 706px);
   margin: auto;
 }
-
 #Homepage #Section2 .img_wrapper img {
   position: relative;
   z-index: 2;
-  -webkit-filter: url(https://static.wixstatic.com/media/d307ba_a9ab04576f1b48f5bbfc82278fa8f486~mv2.png/v1/fill/w_353,h_433,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon.png);
-          filter: url(https://static.wixstatic.com/media/d307ba_a9ab04576f1b48f5bbfc82278fa8f486~mv2.png/v1/fill/w_353,h_433,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon.png);
+  filter: url(https://static.wixstatic.com/media/d307ba_a9ab04576f1b48f5bbfc82278fa8f486~mv2.png/v1/fill/w_353,h_433,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon.png);
 }
-
 #Homepage #Section2 .img_wrapper .img_animated {
   position: absolute;
   left: 30%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transition: 0.5s;
+  transform: translateX(-50%);
   transition: 0.5s;
   opacity: 0;
 }
-
 #Homepage #Section2 .img_wrapper .img_animated.aos-animate {
   left: 50%;
   opacity: 1;
 }
-
 #Homepage #Section2 .content_description {
   width: 981px;
   margin: auto;
   position: relative;
 }
-
 #Homepage #Section2 .content_description .drawing {
   position: absolute;
   right: 0px;
   top: 0;
 }
-
 #Homepage #Section3 .img_mask_box {
   position: relative;
   width: 400px;
 }
-
 #Homepage #Section3 .img_mask_box .mask_wrapper {
   --mask-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' data-bbox='32.5 20 135 160' viewBox='32.5 20 135 160' height='200' width='200' xmlns='http://www.w3.org/2000/svg' data-type='shape'%3E%3Cg%3E%3Cpath d='M167.5 140L100 180l-67.5-40V60L100 20l67.5 40v80z'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
-
 #Homepage #Section3 .img_mask_box .mask_wrapper img:nth-child(1) {
   position: absolute;
   left: -12%;
@@ -188,12 +149,10 @@
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
   -webkit-mask-image: var(--mask-image, none);
-  -webkit-filter: var(--filter-effect-svg-url);
-          filter: var(--filter-effect-svg-url);
+  filter: var(--filter-effect-svg-url);
   -webkit-mask-position: var(--mask-position, 0);
   -webkit-mask-repeat: var(--mask-repeat, no-repeat);
 }
-
 #Homepage #Section3 .img_mask_box .mask_wrapper img:nth-child(2) {
   position: absolute;
   left: 0%;
@@ -204,20 +163,97 @@
      object-fit: cover;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
-  -webkit-box-shadow: 0 0 0 #000;
-          box-shadow: 0 0 0 #000;
+  box-shadow: 0 0 0 #000;
   --filter-effect-svg-url: url(\#ink-comp-l6dkg4bp);
   visibility: inherit;
-  -webkit-filter: var(--filter-effect-svg-url);
-          filter: var(--filter-effect-svg-url);
+  filter: var(--filter-effect-svg-url);
   -webkit-mask-image: var(--mask-image, none);
   -webkit-mask-position: var(--mask-position, 0);
   -webkit-mask-size: var(--mask-size, 100% 100%);
   -webkit-mask-repeat: var(--mask-repeat, no-repeat);
 }
-
 #Homepage #Section3 .content_wrapper ul {
   list-style: disc;
   width: 457px;
 }
-/*# sourceMappingURL=Homepage.css.map */
+#Homepage #Section4 {
+  position: relative;
+  height: 777px;
+}
+#Homepage #Section4 .drawing {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  opacity: 0.28;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+#Homepage #Section4 .section_header {
+  padding-top: 100px;
+  position: relative;
+  padding-bottom: 49px;
+}
+#Homepage #Section4 .section_header::before {
+  content: "";
+  right: 100%;
+  display: block;
+  position: absolute;
+  width: 57px;
+  height: 70px;
+  background: url("../../../img/icons/icon_edited.webp") 50% 50%/cover no-repeat;
+}
+#Homepage #Section4 .section_body .body_content {
+  width: 507px;
+}
+#Homepage #Section4 .section_body .img_box_m {
+  position: absolute;
+  bottom: 0;
+  margin-left: 300px;
+}
+#Homepage #Section5 {
+  height: 728px;
+  position: relative;
+}
+#Homepage #Section5 .drawing {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  top: 0;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#Homepage #Section5 .section_header {
+  position: relative;
+  margin: 0px 0px 10px calc((100% - 980px) * 0.5);
+  padding-top: 107px;
+  left: 440px;
+  grid-area: 1/1/2/2;
+  justify-self: start;
+  align-self: start;
+  width: 539px;
+}
+#Homepage #Section5 .section_body {
+  position: relative;
+  z-index: 2;
+  margin: 80px 0px 44px calc((100% - 980px) * 0.5);
+  left: 375px;
+  grid-area: 2/1/5/2;
+  justify-self: start;
+  align-self: start;
+  font-size: 16px;
+  width: 604px;
+}/*# sourceMappingURL=Homepage.css.map */
