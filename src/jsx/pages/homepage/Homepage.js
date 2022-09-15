@@ -10,7 +10,7 @@ function Homepage(props) {
             <Section1></Section1>
             <Section2></Section2>
             <Section3></Section3>
-
+            <Section4></Section4>
         </div>
     );
 }
@@ -26,8 +26,12 @@ const Section1 = () => {
             <p className="font_7" style={{ lineHeight: '1.8em', textAlign: 'center', fontSize: '24px' }}><span className="color_14"><span style={{ letterSpacing: '0.05em' }}>100% SWISS MADE</span></span></p>
             <div className="content_footer">
                 <div className="wrapper">
-                    <img className='img_lg' src={require('../../../img/icons/GreenovationIcon.webp')} alt="" />
-                    <img className='img_sm' src={require('../../../img/icons/GreenovationIconSm.webp')} alt="GreenovationIconSm.webp" />
+                    <div className="img_lg">
+                        <img className='' src={require('../../../img/icons/GreenovationIcon.webp')} alt="" />
+                    </div>
+                    <div className="img_sm">
+                        <img className='' src={require('../../../img/icons/GreenovationIconSm.webp')} alt="GreenovationIconSm.webp" />
+                    </div>
                     <a href='#' className="btn_content_footer">
                         KAUFE JETZT DEINE ERSTE PFLANZE
                         <svg fill='white' style={{ height: '10px' }} className="ms-2" data-bbox="13.05 2.55 33.878 54.8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
@@ -52,18 +56,19 @@ const Section2 = () => {
 
         <h1 className="font_0" style={{ fontSize: '25px', textAlign: 'center' }}><span className="color_23"><span style={{ fontSize: '25px' }}>LEBENSLANG GELD</span></span><span className="color_14"><span style={{ fontSize: '25px' }}>&nbsp;ERHALTEN IN 5 SCHRITTEN</span></span></h1>
 
-        <div className="img_wrapper d-flex justify-content-between">
-            <img src="https://static.wixstatic.com/media/d307ba_a9ab04576f1b48f5bbfc82278fa8f486~mv2.png/v1/fill/w_353,h_433,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon.png" alt="greenovation logo icon.png" style={{ width: '353px', height: '433px', objectFit: 'cover', objectPosition: '50% 50%' }} />
-            <div className="d-flex justify-content-end flex-grow-1">
-                <img className='' src="https://static.wixstatic.com/media/d307ba_766e1eb74e9944d2aa78ba2c83f6eeef~mv2.png/v1/fill/w_324,h_398,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon_edited.png" alt="greenovation logo icon_edited.png" style={{ width: '324px', height: '398px', objectFit: 'cover', objectPosition: '50% 50%' }} />
-            </div>
-            <div className="img_animated" data-aos="fade-right" data-aos-once="true" >
-                <img src="https://static.wixstatic.com/media/670a64_d7a7f2c910f844fd8049fe77d8da4c02~mv2.jpg/v1/crop/x_646,y_2285,w_3670,h_2531/fill/w_749,h_516,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/GREENOVATION%205%20STEPS.jpg" alt="GREENOVATION 5 STEPS.jpg" style={{ width: '749px', height: '516px', objectFit: 'cover', objectPosition: '50% 50%' }} />
+        <div className="section_wrapper">
+            <div className="img_wrapper d-flex justify-content-between w-100">
+                <img src="https://static.wixstatic.com/media/d307ba_a9ab04576f1b48f5bbfc82278fa8f486~mv2.png/v1/fill/w_353,h_433,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon.png" alt="greenovation logo icon.png" style={{ width: '353px', height: '433px', objectFit: 'cover', objectPosition: '50% 50%' }} />
+                <div className="d-flex justify-content-end flex-grow-1">
+                    <img className='' src="https://static.wixstatic.com/media/d307ba_766e1eb74e9944d2aa78ba2c83f6eeef~mv2.png/v1/fill/w_324,h_398,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon_edited.png" alt="greenovation logo icon_edited.png" style={{ width: '324px', height: '398px', objectFit: 'cover', objectPosition: '50% 50%' }} />
+                </div>
+                <div className="img_animated" data-aos="fade-right" data-aos-once="true" >
+                    <img src="https://static.wixstatic.com/media/670a64_d7a7f2c910f844fd8049fe77d8da4c02~mv2.jpg/v1/crop/x_646,y_2285,w_3670,h_2531/fill/w_749,h_516,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/GREENOVATION%205%20STEPS.jpg" alt="GREENOVATION 5 STEPS.jpg" style={{ width: '749px', height: '516px', objectFit: 'cover', objectPosition: '50% 50%' }} />
+                </div>
             </div>
         </div>
         <br /><br /><br /><br />
         <br />
-
         <p className="font_7" style={{ lineHeight: '1.7em', textAlign: 'center', fontSize: '24px' }}><span style={{ color: '#85C43F' }}><span style={{ fontWeight: 'bold' }}><span style={{ fontSize: '20px', letterSpacing: '0.05em' }}>Partizipiere am Erfolg des i</span><span style={{ fontSize: '20px', letterSpacing: '0.0416667em' }}>nnovativsten</span><span style={{ fontSize: '20px', letterSpacing: '0.05em' }}>&nbsp;Marktteilnehmers im Crowdgrowing.</span></span></span></p>
         <div className="content_description">
             <img src="https://static.wixstatic.com/media/d307ba_b3ab9914ccc341bbb3eb47f35c0f627c~mv2.png/v1/fill/w_484,h_594,al_c,q_85,enc_auto/greenovation%20logo%20icon%20hex%20gry.png" alt="" className="drawing" />
@@ -74,14 +79,90 @@ const Section2 = () => {
                 Unser State oft the Art Equipment und unsere langjährige Erfahrung optimieren<br />
                 den Ertrag langfristig. Wir ernten seit Jahren im Durchschnitt 22.7 % mehr als<br />
                 unsere Mitbewerber.</span></span></p>
+
+            <br />
+            <div className="text-center">
+                <span style={{ letterSpacing: '0.05em' }}><span style={{ fontSize: '20px' }}>Willkommen bei Greenovation - willkommen in der Zukunft.</span></span>
+            </div>
+            <br /><br /><br />
+
+            <div className="btn_wrapper text-center">
+                <a href="#" className="btn_outline_green px-4">
+                    PFLANZE KAUFEN
+                </a>
+            </div>
+
+            <h1 className="font_0" style={{ fontSize: '15px', textAlign: 'center' }}><span style={{ fontSize: '15px' }}>*zum Vorzugspreis</span></h1>
+
+            <p className="font_7" style={{ fontSize: '20px', lineHeight: '1.7em', textAlign: 'center' }}><span style={{ letterSpacing: '0.05em' }}><span style={{ fontSize: '25px' }}><span className="color_23">"Medizinal Cannabis ist der Milliarden-Zukunftsmarkt"</span></span><br />
+                <span style={{ fontSize: '15px' }}>-Peter Thiel</span></span></p>
+            <p className="font_7" style={{ fontSize: '15px', lineHeight: '1.7em', textAlign: 'center' }}><span style={{ fontSize: '15px' }}><span style={{ letterSpacing: '0.05em' }}>Gründer von Paypal &amp; erster Investor bei Facebook</span></span></p>
+
+
+
+
         </div>
+
+        <div className="content_2">
+
+        </div>
+
     </section>
 }
 
 const Section3 = () => {
     return (
         <section id="Section3">
+            <div className="section_wrapper_sm">
+                <div id="comp-l6dka9fm" className="_2Hij5 _3bcaz text-center" data-testid="richTextElement"><h1 className="font_0" style={{ fontSize: '29px' }}><span style={{ fontSize: '29px' }}>WAS UNS GEGENÜBER DEN MITBEWERBERN AUSZEICHNET</span></h1></div>
+
+                <div className="d-flex justify-content-between">
+                    <div className="img_mask_box flex-grow-1">
+                        <div className="mask_wrapper">
+                            <img src={require('../../../img/pages/homepage/mask_img1.webp')} alt="" />
+                            <div className="box">
+                                <svg id="svg_comp-l6dkg4bp" className="position-absolute _2Ea4I"><defs><filter id="ink-comp-l6dkg4bp" colorInterpolationFilters="sRGB">
+                                    <feComponentTransfer result="srcRGB" />
+                                    <feColorMatrix type="matrix" values="0.8179 0.23070000000000002 0.0567 0 0
+     0.10470000000000002 0.9058 0.050400000000000014 0 0
+     0.0816 0.1602 0.7393 0 0
+     0 0 0 1 0" />
+                                    <feComponentTransfer><feFuncR type="linear" slope="1.5" intercept="-0.25" />
+                                        <feFuncG type="linear" slope="1.5" intercept="-0.25" />
+                                        <feFuncB type="linear" slope="1.5" intercept="-0.25" /></feComponentTransfer>
+                                    <feComponentTransfer><feFuncR type="linear" slope="1.1" /><feFuncG type="linear" slope="1.1" /><feFuncB type="linear" slope="1.1" /></feComponentTransfer>
+                                    <feColorMatrix type="saturate" values={0} />
+                                    <feComponentTransfer />
+                                </filter></defs></svg>
+                                <img src={require('../../../img/pages/homepage/mask_img2.webp')} alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="content_wrapper px-3 px-md-4">
+                        <ul className="font_7" style={{ fontSize: '18px', textAlign: 'left' }}>
+                            <li>
+                                <p className="font_7" style={{ fontSize: '18px' }}><span style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.1em' }}>Alle Pflanzenplätze die du kaufst befinden s</span></span><span style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.1em' }}>ich <span style={{ fontWeight: 'bold' }}>in unserer eigenen Anlage</span> in der Schweiz. Wir haben keine unsichere Kooperationen mit fremden Anlagen.</span></span></p>
+                            </li>
+                            <li>
+                                <p className="font_7" style={{ fontSize: '18px' }}><span style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.1em' }}>Unsere Anlage ist <span style={{ fontWeight: 'bold' }}>zur sofortigen Nutzung bereit</span>! Bei einigen Mitbewerbern wird erst das Geld gesammelt und dann die Anlage gebaut. So vergeht über ein Jahr bis zur ersten Ernte und Rendite. </span></span><span style={{ fontWeight: 'bold' }}><span style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.1em' }}>WIR SIND READY TO GO!!</span></span></span></p>
+                            </li>
+                            <li>
+                                <p className="font_7" style={{ fontSize: '18px' }}><span style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.1em' }}>Durch unsere Erfahrung und die Optimierung unserer Prozesse ernten wir bis zu <span style={{ fontWeight: 'bold' }}>6-mal im Jahr</span>, was deiner Rendite zugute kommt.</span></span></p>
+                            </li>
+                            <li>
+                                <p className="font_7" style={{ fontSize: '18px' }}><span style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.1em' }}>Wir sind schon seit 4 Jahren erfolgreich am Markt - was dir <span style={{ fontWeight: 'bold' }}>entscheidende Sicherheit</span> gibt.</span></span></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
         </section>
     )
+}
+
+const Section4 = () => {
+    return <section id="Section4">
+
+    </section>
 }

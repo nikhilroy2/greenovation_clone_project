@@ -1,18 +1,26 @@
 @font-face {
-  font-family: Montserrat;
-  src: url(https://fonts.gstatic.com/s/montserrat/v14/JTUQjIg1_i6t8kCHKm459WxRxC7m0dR9pBOi.woff2);
+  font-family: "Montserrat";
+  src: url(../../fonts/mont.woff2);
   font-style: italic;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Montserrat";
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+.section_wrapper {
+  max-width: 1300px;
+  margin: auto;
+}
+.section_wrapper_sm {
+  max-width: 900px;
+  margin: auto;
 }
 :root {
   --color_0: 255, 255, 255;
@@ -903,9 +911,29 @@ a.select_active {
   --above-all-in-container: 49;
 }
 /* .................custom class for mine............. */
-.text-white{
+.text-white {
   color: white;
 }
-.bg-white{
+.bg-white {
+  background: white;
+}
+
+/* // ....... */
+.btn_outline_green {
+  font-size: 14px;
+  color: white;
+  transition: all 0.2s ease, visibility 0s;
+  background: #85c43f;
+  border-radius: 15px;
+  box-shadow: 0.14px 4px 17px 0 #ffffff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  letter-spacing: 0.1em;
+}
+.btn_outline_green:hover {
+  color: #85c43f;
+  border: 2px solid #85c43f;
   background: white;
 }
