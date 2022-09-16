@@ -218,16 +218,42 @@ const Section5 = () => {
                 <img style={{ position: 'absolute', right: '-80px', top: '-20px' }} src={require('../../../img/icons/icon_side.webp')} alt="img" />
             </h1>
         </div>
-        <div className="section_body">
-            <p className="font_8" style={{ lineHeight: '1.7em', textAlign: 'right', fontSize: '16px' }}>
-                <span style={{ letterSpacing: '0.05em' }}>
-                    Seit über 4 Jahren haben wir geforscht und unsere Prozesse verfeinert. Wir sind in der Schweiz die Einzigen im Bereich Cannabis, welche die Pflanzen per «in vitro» in der Lage sind zu vermehren. Was bedeutet in vitro? Die Pflanzen werden im Labor unter sterilen Bedingungen geklont. Dadurch sind sie genetisch verjüngt und stabiler, verfügen über das maximale genetische Potential der Sorte und sind garantiert frei von jeglichen Krankheiten, Schädlingen und Viren. Mit dieser zukunftsweisenden Technik haben wir gegenüber den Mitbewerbern einen entscheidenden Wissens- und Erfahrungsvorsprung in der Produktion und Qualität, wovon du direkt profitierst.</span></p>
+        <div className="img_box_m">
+            <div className="box">
+                <svg id="svg_comp-l6c1djqu" className="_2Ea4I"><defs><filter id="lighten-comp-l6c1djqu" colorInterpolationFilters="sRGB">
+                    <feComponentTransfer result="srcRGB" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1
+0 0 0 0 1
+0 0 0 0 1
+0 0 0 1 0" in="srcRGB" result="color" />
+                    <feComponentTransfer in="color" result="color_alpha"><feFuncA type="linear" slope="0.46" /></feComponentTransfer>
+                    <feComposite operator="over" in="color_alpha" in2="srcRGB" />
+                    <feComponentTransfer />
+                </filter></defs></svg>
 
-            <div className="action_btn_wrapper d-flex justify-content-end mt-5">
-                <a href="#" className='stable_green_btn'>
-                    MEHR INFOS
-                </a>
+                <img className='canna_img' src={require('../../../img/pages/homepage/cannabis.webp')} alt="" />
+            </div>
+            <div className="box">
+                <img className='grenno_circle' src={require('../../../img/pages/homepage/greenovation_animated.webp')} alt="" />
+            </div>
+            <div className="box">
+                <img className='edit_lg' src={require('../../../img/pages/homepage/icon_edited_lg.webp')} alt="" />
             </div>
         </div>
+        <div className="content_section">
+            <div className="section_body">
+                <p className="font_8" style={{ lineHeight: '1.7em', textAlign: 'right', fontSize: '16px' }}>
+                    <span style={{ letterSpacing: '0.05em' }}>
+                        Seit über 4 Jahren haben wir geforscht und unsere Prozesse verfeinert. Wir sind in der Schweiz die Einzigen im Bereich Cannabis, welche die Pflanzen per «in vitro» in der Lage sind zu vermehren. Was bedeutet in vitro? Die Pflanzen werden im Labor unter sterilen Bedingungen geklont. Dadurch sind sie genetisch verjüngt und stabiler, verfügen über das maximale genetische Potential der Sorte und sind garantiert frei von jeglichen Krankheiten, Schädlingen und Viren. Mit dieser zukunftsweisenden Technik haben wir gegenüber den Mitbewerbern einen entscheidenden Wissens- und Erfahrungsvorsprung in der Produktion und Qualität, wovon du direkt profitierst.</span></p>
+
+                <div className="action_btn_wrapper d-flex justify-content-end mt-5">
+                    <a href="#" className='stable_green_btn'>
+                        MEHR INFOS
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
     </section>
 }
