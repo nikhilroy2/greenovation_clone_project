@@ -43,7 +43,7 @@ function Header(props) {
                         <img src={require('../../../img/logo/logo.webp')} alt="logo" />
                     </Link>
 
-                    <ul className="navbar_list mb-0">
+                    <ul className="navbar_list my-0">
                         {
                             navlist_object.map(v => {
                                 return (

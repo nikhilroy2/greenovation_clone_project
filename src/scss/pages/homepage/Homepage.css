@@ -303,4 +303,92 @@
   justify-self: start;
   align-self: start;
   top: 35px;
+}
+#Homepage #Section6 {
+  --filter-effect-svg-url: url(#lighten-comp-l6ciumgw);
+}
+#Homepage #Section6 .section_wrapper_sm {
+  position: relative;
+}
+#Homepage #Section6 .design1,
+#Homepage #Section6 .design2 {
+  position: absolute;
+  z-index: 2;
+  filter: var(--filter-effect-svg-url);
+}
+#Homepage #Section6 .design1 {
+  top: -50px;
+  left: -100px;
+  filter: var(--filter-effect-svg-url);
+}
+#Homepage #Section6 .design2 {
+  top: -30px;
+  right: -190px;
+}
+#Homepage #Section6 .img_gallery {
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+#Homepage #Section6 .img_gallery .img_box {
+  cursor: pointer;
+}
+#Homepage #Section6 .img_gallery .img_box:nth-child(1) {
+  width: 233px;
+  height: 230px;
+  position: relative;
+  margin: 49px 0px 10px calc((100% - 980px) * 0.5);
+  left: -6px;
+}
+#Homepage #Section6 .img_gallery .img_box:nth-child(2) {
+  position: relative;
+  margin: -184px 0px 35px calc((100% - 980px) * 0.5);
+  left: 157px;
+}
+#Homepage #Section6 .img_gallery .img_box:nth-child(2) img {
+  width: 256px;
+  height: 239px;
+}
+#Homepage #Section6 .img_gallery .img_box:nth-child(3) {
+  position: relative;
+  margin: -314px 0px 10px calc((100% - 980px) * 0.5);
+  left: 363px;
+}
+#Homepage #Section6 .img_gallery .img_box:nth-child(3) img {
+  width: 229px;
+  height: 226px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+#Homepage #Section6 .img_gallery .img_box:nth-child(4) {
+  position: relative;
+  margin: -174px 0px 17px calc((100% - 980px) * 0.5);
+  left: 548px;
+  width: 230px;
+  height: 227px;
+}
+#Homepage #Section6 .img_gallery .img_box:nth-child(5) {
+  width: 303px;
+  height: 298px;
+  position: relative;
+  margin: -331px 0px 42px calc((100% - 980px) * 0.5);
+  left: 676px;
+}
+
+#img_preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 3000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#img_preview img {
+  height: 80vh;
 }/*# sourceMappingURL=Homepage.css.map */

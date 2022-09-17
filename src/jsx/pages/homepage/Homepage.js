@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AOS from 'aos';
 import '../../../scss/pages/homepage/Homepage.css';
 
@@ -12,6 +12,7 @@ function Homepage(props) {
             <Section3></Section3>
             <Section4></Section4>
             <Section5></Section5>
+            <Section6></Section6>
         </div>
     );
 }
@@ -245,7 +246,6 @@ const Section5 = () => {
                 <p className="font_8" style={{ lineHeight: '1.7em', textAlign: 'right', fontSize: '16px' }}>
                     <span style={{ letterSpacing: '0.05em' }}>
                         Seit über 4 Jahren haben wir geforscht und unsere Prozesse verfeinert. Wir sind in der Schweiz die Einzigen im Bereich Cannabis, welche die Pflanzen per «in vitro» in der Lage sind zu vermehren. Was bedeutet in vitro? Die Pflanzen werden im Labor unter sterilen Bedingungen geklont. Dadurch sind sie genetisch verjüngt und stabiler, verfügen über das maximale genetische Potential der Sorte und sind garantiert frei von jeglichen Krankheiten, Schädlingen und Viren. Mit dieser zukunftsweisenden Technik haben wir gegenüber den Mitbewerbern einen entscheidenden Wissens- und Erfahrungsvorsprung in der Produktion und Qualität, wovon du direkt profitierst.</span></p>
-
                 <div className="action_btn_wrapper d-flex justify-content-end mt-5">
                     <a href="#" className='stable_green_btn'>
                         MEHR INFOS
@@ -256,4 +256,88 @@ const Section5 = () => {
 
 
     </section>
+}
+
+const Section6 = () => {
+
+    const [visible, setVisible] = useState(false);
+    const [src_lg, setSrc_lg] = useState('');
+    function imgClickFunc(srcPara) {
+        setVisible(true);
+        setSrc_lg(srcPara)
+    }
+    return (
+        <section id="Section6">
+            <div className="section_wrapper_sm">
+                <div className="section_header d-flex align-items-center">
+                    <img src={require('../../../img/icons/icon_edited.webp')} alt="img" />
+                    <h1 className="font_0 ms-3" style={{ fontSize: '30px' }}><span style={{ fontSize: '30px' }}>BESITZURKUNDE VIA NFT</span></h1>
+                </div>
+                <div className="section_body mt-5">
+                    <p className="font_8" style={{ lineHeight: '1.7em', fontSize: '16px' }}><span style={{ letterSpacing: '0.05em' }}>Als Vorreiter unserer Branche sichern wir die Pflanzenplätze per Blockchain-<br />
+                        Technologie und bieten unseren Kunden eine einzigartige Beteiligung an der<br />
+                        Produktion. Der Besitz ihres Pflanzenplatzes wird über ihr NFT sichergestellt. Du<br />
+                        kannst mit den NFT handeln und so deinen Pflanzenplatz gewinnbringend<br />
+                        verkaufen, oder vom passiven Einkommen profitieren.&nbsp;<br />
+                        Dein NFT bietet dir nicht nur das geistige Eigentum an einem digitalen Werk,<br />
+                        sondern ist mit einem Real-Business verknüpft in dem es deine Investition<br />
+                        sicherstellt.</span></p>
+                </div>
+            </div>
+
+            <div className="section_wrapper_sm position-relative">
+                <svg id="svg_comp-l6ciumgw" className="_2Ea4I"><defs><filter id="lighten-comp-l6ciumgw" colorInterpolationFilters="sRGB">
+                    <feComponentTransfer result="srcRGB" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1
+0 0 0 0 1
+0 0 0 0 1
+0 0 0 1 0" in="srcRGB" result="color" />
+                    <feComponentTransfer in="color" result="color_alpha"><feFuncA type="linear" slope="0.46" /></feComponentTransfer>
+                    <feComposite operator="over" in="color_alpha" in2="srcRGB" />
+                    <feComponentTransfer />
+                </filter></defs></svg>
+
+
+                <div className="design1">
+                    <img src={require('../../../img/pages/homepage/hexgreen.webp')} alt="" />
+                </div>
+                <div className="design2">
+                    <img src={require('../../../img/pages/homepage/designSec.webp')} alt="" />
+                </div>
+
+                <div className="img_gallery">
+
+                    <div className="img_box">
+                        <img onClick={() => imgClickFunc(require('../../../img/pages/homepage/nft1_lg.webp'))} data-src-lg={require('../../../img/pages/homepage/nft1_lg.webp')} src={require('../../../img/pages/homepage/nft1.webp')} alt="img" />
+                    </div>
+                    <div className="img_box">
+                        <img onClick={() => imgClickFunc(require('../../../img/pages/homepage/nft2$_lg.webp'))} data-src-lg={require('../../../img/pages/homepage/nft2$_lg.webp')} src={require('../../../img/pages/homepage/nft2$.webp')} alt="img" />
+                    </div>
+                    <div className="img_box">
+                        <img onClick={() => imgClickFunc(require('../../../img/pages/homepage/nft3_lg.webp'))} data-src-lg={require('../../../img/pages/homepage/nft3_lg.webp')} src={require('../../../img/pages/homepage/nft3.webp')} alt="img" />
+                    </div>
+                    <div className="img_box">
+                        <img onClick={() => imgClickFunc(require('../../../img/pages/homepage/nft5_lg.webp'))} data-src-lg={require('../../../img/pages/homepage/nft5_lg.webp')} src={require('../../../img/pages/homepage/nft5.webp')} alt="img" />
+                    </div>
+                    <div className="img_box">
+                        <img onClick={() => imgClickFunc(require('../../../img/pages/homepage/nft6_lg.webp'))} data-src-lg={require('../../../img/pages/homepage/nft6_lg.webp')} src={require('../../../img/pages/homepage/nft6.webp')} alt="img" />
+                    </div>
+                </div>
+                <ImgPreview visible={visible} src_lg={src_lg}>
+                    <div id="img_preview" onClick={() => setVisible(false)}>
+                        <button className="btn_times" onClick={() => setVisible(false)}>
+                            <svg viewBox="0 0 180 180" className="o7yro" tabIndex={0} role="button" aria-label="close"><path d="M5 5 L175 175 M175 5 L5 175" /></svg>
+                        </button>
+                        <img src={src_lg} alt="img" />
+                    </div>
+                </ImgPreview>
+            </div>
+        </section>
+    )
+}
+
+const ImgPreview = ({ visible, src_lg, children }) => {
+    return visible && (
+        <>{children}</>
+    )
 }
