@@ -13,6 +13,9 @@ function Homepage(props) {
             <Section4></Section4>
             <Section5></Section5>
             <Section6></Section6>
+            <Section7></Section7>
+            <Section8></Section8>
+            <Section9></Section9>
         </div>
     );
 }
@@ -286,7 +289,7 @@ const Section6 = () => {
             </div>
 
             <div className="section_wrapper_sm position-relative">
-                <svg id="svg_comp-l6ciumgw" className="_2Ea4I"><defs><filter id="lighten-comp-l6ciumgw" colorInterpolationFilters="sRGB">
+                <svg id="svg_comp-l6ciumgw" className="_2Ea4I position-absolute"><defs><filter id="lighten-comp-l6ciumgw" colorInterpolationFilters="sRGB">
                     <feComponentTransfer result="srcRGB" />
                     <feColorMatrix type="matrix" values="0 0 0 0 1
 0 0 0 0 1
@@ -323,6 +326,13 @@ const Section6 = () => {
                         <img onClick={() => imgClickFunc(require('../../../img/pages/homepage/nft6_lg.webp'))} data-src-lg={require('../../../img/pages/homepage/nft6_lg.webp')} src={require('../../../img/pages/homepage/nft6.webp')} alt="img" />
                     </div>
                 </div>
+
+                <div className="action_btn_wrapper d-flex justify-content-center mt-5">
+                    <a href="#" className='stable_green_btn'>
+                        MEHR INFOS
+                    </a>
+                </div>
+
                 <ImgPreview visible={visible} src_lg={src_lg}>
                     <div id="img_preview" onClick={() => setVisible(false)}>
                         <button className="btn_times" onClick={() => setVisible(false)}>
@@ -340,4 +350,234 @@ const ImgPreview = ({ visible, src_lg, children }) => {
     return visible && (
         <>{children}</>
     )
+}
+
+const Section7 = () => {
+    return <section id="Section7">
+        <img src={require('../../../img/pages/homepage/mv3.webp')} alt="" className="bg_drawing" />
+        <div className="section_wrapper_sm">
+            <div className="section_header">
+                <h1 className="font_0" style={{ fontSize: '45px', textAlign: 'center' }}><span className="color_23"><span style={{ fontSize: '45px' }}>AFFILIATE</span></span></h1>
+            </div>
+            <div className="section_body">
+
+                <p className="font_8" style={{ lineHeight: '1.7em', textAlign: 'center', fontSize: '16px' }}><span style={{ letterSpacing: '0.05em' }}>Wenn man Freude am Erfolg hat, möchte man es auch mit anderen teilen. Lass auch du Andere am Erfolg teilhaben und steigere dadurch deine &nbsp;Rendite noch zusätzlich.</span><br />
+                    <br />
+                    <span style={{ letterSpacing: '0.05em' }}>Wie du von der überd</span><span style={{ letterSpacing: '0.05em' }}>urchschnittlichen</span><span style={{ letterSpacing: '0.05em' }}>&nbsp;Rendite profitieren kannst.</span></p>
+
+                <div className="affiliate_card_wrapper">
+                    <div className="affiliate_card">
+                        <div className="card_head">
+                            <div className="img_box">
+                                <img src={require('../../../img/pages/homepage/green_icon.webp')} alt="" />
+                            </div>
+                            <div className="img_box hover_box">
+                                <img src={require('../../../img/pages/homepage/white_green_icon.webp')} alt="" />
+                            </div>
+                            <h1 className="font_0 my-0" style={{ fontSize: '25px', textAlign: 'center' }}><span style={{ fontWeight: 'bold' }}><span style={{ fontSize: '25px' }}><span className="color_23">EMPFEHLUNGSBONUS</span></span></span></h1>
+                        </div>
+                        <div className="card_body">
+                            <h1 className="font_0 mt-0" style={{ fontSize: '25px', textAlign: 'center' }}><span className="color_14"><span style={{ fontSize: '25px' }}>Für jeden Freund den du als CrowdGrower&nbsp; anwirbst erhälst du einen Bonus</span></span></h1>
+                        </div>
+                    </div>
+
+
+                    <div className="affiliate_card">
+                        <div className="card_head">
+                            <div className="img_box">
+                                <img src={require('../../../img/pages/homepage/green_icon.webp')} alt="" />
+                            </div>
+                            <div className="img_box hover_box">
+                                <img src={require('../../../img/pages/homepage/white_green_icon.webp')} alt="" />
+                            </div>
+                            <h1 className="font_0 my-0" style={{ fontSize: '25px', textAlign: 'center' }}><span style={{ fontWeight: 'bold' }}><span style={{ fontSize: '25px' }}><span className="color_23">
+                                ERNTEBONUS
+                            </span></span></span></h1>
+                        </div>
+                        <div className="card_body">
+                            <h1 className="font_0 mt-0" style={{ fontSize: '25px', textAlign: 'center' }}><span className="color_14"><span style={{ fontSize: '25px' }}>
+
+                                Du profitierst von jeder Ernte deiner angeworbenen CrowdGrower
+                            </span></span></h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="action_btn_wrapper d-flex justify-content-center mt-5">
+                    <a href="#" className='stable_green_btn'>
+                        ZUM PROGRAMM
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+
+const Section8 = () => {
+    return <section id="Section8">
+        <img className='drawing' src={require('../../../img/pages/homepage/ABSICHERUNG.webp')} alt="img" />
+        <div className="section_header d-flex align-items-center">
+            <img src={require('../../../img/icons/icon_edited.webp')} alt="img" />
+            <h1 className="font_0 ms-3" style={{ fontSize: '30px' }}><span style={{ fontSize: '30px' }}>ABSICHERUNG</span></h1>
+
+            <div className="img_xl">
+                <svg id="svg_comp-l6ciwoaf" className="_2Ea4I"><defs><filter id="faded-comp-l6ciwoaf" colorInterpolationFilters="sRGB">
+                    <feComponentTransfer result="srcRGB" />
+                    <feColorMatrix type="saturate" values="0.2" />
+                    <feComponentTransfer><feFuncR type="linear" slope="0.85" intercept="0.08" />
+                        <feFuncG type="linear" slope="0.85" intercept="0.08" />
+                        <feFuncB type="linear" slope="0.85" intercept="0.08" /></feComponentTransfer>
+                    <feComponentTransfer><feFuncR type="linear" slope="0.9" /><feFuncG type="linear" slope="0.9" /><feFuncB type="linear" slope="0.9" /></feComponentTransfer>
+                    <feColorMatrix type="matrix" values="0.13725490196078427 0 0 0 0.8627450980392157 0.1333333333333333 0 0 0 0.8666666666666667 0.13725490196078427 0 0 0 0.8627450980392157 0 0 0 1 0" />
+                    <feComponentTransfer />
+                </filter></defs></svg>
+
+
+                <img className='edit_icon_xl' src={require('../../../img/pages/homepage/icon_edited_xl.webp')} alt="" />
+            </div>
+
+        </div>
+        <div className="section_body">
+            <p className="font_8" style={{ fontSize: '16px' }}>Selbstverständlich haben wir alle möglichen Risiken versichert, damit ihr Investment und ihre Einkünfte abgesichert sind:</p>
+            <ul className="font_8 color_23" style={{ fontSize: '18px', fontWeight: 'bold', listStyle: 'disc' }}>
+                <li>
+                    <p className="font_8 py-0 my-0" style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.05em' }}><span style={{ fontSize: '18px' }}><span style={{ fontWeight: 'bold' }}><span className="color_23">Ertragsausfall&nbsp;</span></span></span></span></p>
+                </li>
+                <li>
+                    <p className="font_8 py-0 my-0" style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.05em' }}><span style={{ fontSize: '18px' }}><span style={{ fontWeight: 'bold' }}><span className="color_23">Diebstahl&nbsp;</span></span></span></span></p>
+                </li>
+                <li>
+                    <p className="font_8 py-0 my-0" style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.05em' }}><span style={{ fontSize: '18px' }}><span style={{ fontWeight: 'bold' }}><span className="color_23">Dritteinwirkungen&nbsp;</span></span></span></span></p>
+                </li>
+                <li>
+                    <p className="font_8 py-0 my-0" style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.05em' }}><span style={{ fontSize: '18px' }}><span style={{ fontWeight: 'bold' }}><span className="color_23">Vandalismus&nbsp;</span></span></span></span></p>
+                </li>
+                <li>
+                    <p className="font_8 py-0 my-0" style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.05em' }}><span style={{ fontSize: '18px' }}><span style={{ fontWeight: 'bold' }}><span className="color_23">Wasserschäden</span></span></span></span></p>
+                </li>
+                <li style={{ lineHeight: '1.4em' }}>
+                    <p className="font_8 py-0 my-0" style={{ fontSize: '18px', lineHeight: '1.4em' }}><span style={{ letterSpacing: '0.05em' }}><span style={{ fontSize: '18px' }}><span style={{ fontWeight: 'bold' }}><span className="color_23">Feuerschäden&nbsp;</span></span></span></span></p>
+                </li>
+            </ul>
+
+        </div>
+
+    </section>
+}
+
+const Section9 = () => {
+    return <section id="Section9">
+        <div className="section_body">
+            <div className="item_box">
+                <h2 className="font_0 my-0" style={{ fontSize: '30px', lineHeight: 'normal' }}><span style={{ fontSize: '30px' }}><span className="color_14"><span style={{ letterSpacing: 'normal' }}>PARTNER</span></span></span></h2>
+            </div>
+
+            <div className="item_box">
+                <svg id="svg_comp-l6cbuz98" className="_2Ea4I"><defs><filter id="lighten-comp-l6cbuz98" colorInterpolationFilters="sRGB">
+                    <feComponentTransfer result="srcRGB" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1
+0 0 0 0 1
+0 0 0 0 1
+0 0 0 1 0" in="srcRGB" result="color" />
+                    <feComponentTransfer in="color" result="color_alpha"><feFuncA type="linear" slope="0.46" /></feComponentTransfer>
+                    <feComposite operator="over" in="color_alpha" in2="srcRGB" />
+                    <feComponentTransfer />
+                </filter></defs></svg>
+
+                <img src={require('../../../img/pages/homepage/schwatu.webp')} alt="img" />
+            </div>
+
+            <div className="item_box">
+                <svg id="svg_comp-l6cboopu" className="_2Ea4I"><defs><filter id="lighten-comp-l6cboopu" colorInterpolationFilters="sRGB">
+                    <feComponentTransfer result="srcRGB" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1
+0 0 0 0 1
+0 0 0 0 1
+0 0 0 1 0" in="srcRGB" result="color" />
+                    <feComponentTransfer in="color" result="color_alpha"><feFuncA type="linear" slope="0.46" /></feComponentTransfer>
+                    <feComposite operator="over" in="color_alpha" in2="srcRGB" />
+                    <feComponentTransfer />
+                </filter></defs></svg>
+
+                <img src={require('../../../img/pages/homepage/bluelab-logo_1200x1200.webp')} alt="img" />
+            </div>
+
+            <div className="item_box">
+                <svg id="svg_comp-l6cbp0uz" className="_2Ea4I"><defs><filter id="lighten-comp-l6cbp0uz" colorInterpolationFilters="sRGB">
+                    <feComponentTransfer result="srcRGB" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1
+0 0 0 0 1
+0 0 0 0 1
+0 0 0 1 0" in="srcRGB" result="color" />
+                    <feComponentTransfer in="color" result="color_alpha"><feFuncA type="linear" slope="0.46" /></feComponentTransfer>
+                    <feComposite operator="over" in="color_alpha" in2="srcRGB" />
+                    <feComponentTransfer />
+                </filter></defs></svg>
+
+                <img src={require('../../../img/pages/homepage/CV_logo_vertical_color_webp.webp')} alt="img" />
+            </div>
+
+            <div className="item_box">
+                <svg id="svg_comp-l6cbr07j" className="_2Ea4I"><defs><filter id="lighten-comp-l6cbr07j" colorInterpolationFilters="sRGB">
+                    <feComponentTransfer result="srcRGB" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1
+0 0 0 0 1
+0 0 0 0 1
+0 0 0 1 0" in="srcRGB" result="color" />
+                    <feComponentTransfer in="color" result="color_alpha"><feFuncA type="linear" slope="0.46" /></feComponentTransfer>
+                    <feComposite operator="over" in="color_alpha" in2="srcRGB" />
+                    <feComponentTransfer />
+                </filter></defs></svg>
+
+                <img src={require('../../../img/pages/homepage/CarbonActive-Logo.webp')} alt="img" />
+            </div>
+
+
+            <div className="item_box">
+                <svg id="svg_comp-l6cbn70m" className="_2Ea4I"><defs><filter id="lighten-comp-l6cbn70m" colorInterpolationFilters="sRGB">
+                    <feComponentTransfer result="srcRGB" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1
+0 0 0 0 1
+0 0 0 0 1
+0 0 0 1 0" in="srcRGB" result="color" />
+                    <feComponentTransfer in="color" result="color_alpha"><feFuncA type="linear" slope="0.46" /></feComponentTransfer>
+                    <feComposite operator="over" in="color_alpha" in2="srcRGB" />
+                    <feComponentTransfer />
+                </filter></defs></svg>
+
+
+                <img src={require('../../../img/pages/homepage/Sigma-Aldrich_logo.webp')} alt="img" />
+            </div>
+
+            <div className="item_box">
+                <svg id="svg_comp-l6cbnjix" className="_2Ea4I"><defs><filter id="lighten-comp-l6cbnjix" colorInterpolationFilters="sRGB">
+                    <feComponentTransfer result="srcRGB" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1
+0 0 0 0 1
+0 0 0 0 1
+0 0 0 1 0" in="srcRGB" result="color" />
+                    <feComponentTransfer in="color" result="color_alpha"><feFuncA type="linear" slope="0.46" /></feComponentTransfer>
+                    <feComposite operator="over" in="color_alpha" in2="srcRGB" />
+                    <feComponentTransfer />
+                </filter></defs></svg>
+
+                <img src={require('../../../img/pages/homepage/bbc7fc_8b3c335d14ff49e78ad90f826a4199f4_mv2.webp')} alt="img" />
+            </div>
+
+            <div className="item_box">
+                <svg id="svg_comp-l6cbo08k" className="_2Ea4I"><defs><filter id="lighten-comp-l6cbo08k" colorInterpolationFilters="sRGB">
+                    <feComponentTransfer result="srcRGB" />
+                    <feColorMatrix type="matrix" values="0 0 0 0 1
+0 0 0 0 1
+0 0 0 0 1
+0 0 0 1 0" in="srcRGB" result="color" />
+                    <feComponentTransfer in="color" result="color_alpha"><feFuncA type="linear" slope="0.46" /></feComponentTransfer>
+                    <feComposite operator="over" in="color_alpha" in2="srcRGB" />
+                    <feComponentTransfer />
+                </filter></defs></svg>
+
+                <img src={require('../../../img/pages/homepage/1200px-Logo_Merck_KGaA_2015_svg.webp')} alt="img" />
+            </div>
+        </div>
+    </section>
 }
