@@ -63,9 +63,33 @@ const Section2 = () => {
 
         <div className="section_wrapper">
             <div className="img_wrapper d-flex justify-content-between w-100">
-                <img src="https://static.wixstatic.com/media/d307ba_a9ab04576f1b48f5bbfc82278fa8f486~mv2.png/v1/fill/w_353,h_433,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon.png" alt="greenovation logo icon.png" style={{ width: '353px', height: '433px', objectFit: 'cover', objectPosition: '50% 50%' }} />
+                <div>
+                    <svg id="svg_comp-l6bvzlof" className="_2Ea4I"><defs><filter id="lighten-comp-l6bvzlof" colorInterpolationFilters="sRGB">
+                        <feComponentTransfer result="srcRGB" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1
+0 0 0 0 1
+0 0 0 0 1
+0 0 0 1 0" in="srcRGB" result="color" />
+                        <feComponentTransfer in="color" result="color_alpha"><feFuncA type="linear" slope="0.46" /></feComponentTransfer>
+                        <feComposite operator="over" in="color_alpha" in2="srcRGB" />
+                        <feComponentTransfer />
+                    </filter></defs></svg>
+
+                    <img className='left_img' src="https://static.wixstatic.com/media/d307ba_a9ab04576f1b48f5bbfc82278fa8f486~mv2.png/v1/fill/w_353,h_433,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon.png" alt="greenovation logo icon.png" style={{ width: '353px', height: '433px', objectFit: 'cover', objectPosition: '50% 50%' }} />
+                </div>
                 <div className="d-flex justify-content-end flex-grow-1">
-                    <img className='' src="https://static.wixstatic.com/media/d307ba_766e1eb74e9944d2aa78ba2c83f6eeef~mv2.png/v1/fill/w_324,h_398,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon_edited.png" alt="greenovation logo icon_edited.png" style={{ width: '324px', height: '398px', objectFit: 'cover', objectPosition: '50% 50%' }} />
+                    <svg id="svg_comp-l6bw28yg" className="_2Ea4I"><defs><filter id="lighten-comp-l6bw28yg" colorInterpolationFilters="sRGB">
+                        <feComponentTransfer result="srcRGB" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1
+0 0 0 0 1
+0 0 0 0 1
+0 0 0 1 0" in="srcRGB" result="color" />
+                        <feComponentTransfer in="color" result="color_alpha"><feFuncA type="linear" slope="0.46" /></feComponentTransfer>
+                        <feComposite operator="over" in="color_alpha" in2="srcRGB" />
+                        <feComponentTransfer />
+                    </filter></defs></svg>
+
+                    <img className='right_img' src="https://static.wixstatic.com/media/d307ba_766e1eb74e9944d2aa78ba2c83f6eeef~mv2.png/v1/fill/w_324,h_398,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon_edited.png" alt="greenovation logo icon_edited.png" style={{ width: '324px', height: '398px', objectFit: 'cover', objectPosition: '50% 50%' }} />
                 </div>
                 <div className="img_animated" data-aos="fade-right" data-aos-once="true" >
                     <img src="https://static.wixstatic.com/media/670a64_d7a7f2c910f844fd8049fe77d8da4c02~mv2.jpg/v1/crop/x_646,y_2285,w_3670,h_2531/fill/w_749,h_516,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/GREENOVATION%205%20STEPS.jpg" alt="GREENOVATION 5 STEPS.jpg" style={{ width: '749px', height: '516px', objectFit: 'cover', objectPosition: '50% 50%' }} />
@@ -75,8 +99,21 @@ const Section2 = () => {
         <br /><br /><br /><br />
         <br />
         <p className="font_7" style={{ lineHeight: '1.7em', textAlign: 'center', fontSize: '24px' }}><span style={{ color: '#85C43F' }}><span style={{ fontWeight: 'bold' }}><span style={{ fontSize: '20px', letterSpacing: '0.05em' }}>Partizipiere am Erfolg des i</span><span style={{ fontSize: '20px', letterSpacing: '0.0416667em' }}>nnovativsten</span><span style={{ fontSize: '20px', letterSpacing: '0.05em' }}>&nbsp;Marktteilnehmers im Crowdgrowing.</span></span></span></p>
+        <br /><br /><br /> <br />
         <div className="content_description">
-            <img src="https://static.wixstatic.com/media/d307ba_b3ab9914ccc341bbb3eb47f35c0f627c~mv2.png/v1/fill/w_484,h_594,al_c,q_85,enc_auto/greenovation%20logo%20icon%20hex%20gry.png" alt="" className="drawing" />
+            <div className="">
+                <svg id="svg_comp-l6bz75cu" className="_2Ea4I"><defs><filter id="faded-comp-l6bz75cu" colorInterpolationFilters="sRGB">
+                    <feComponentTransfer result="srcRGB" />
+                    <feColorMatrix type="saturate" values="0.2" />
+                    <feComponentTransfer><feFuncR type="linear" slope="0.85" intercept="0.08" />
+                        <feFuncG type="linear" slope="0.85" intercept="0.08" />
+                        <feFuncB type="linear" slope="0.85" intercept="0.08" /></feComponentTransfer>
+                    <feComponentTransfer><feFuncR type="linear" slope="0.9" /><feFuncG type="linear" slope="0.9" /><feFuncB type="linear" slope="0.9" /></feComponentTransfer>
+                    <feColorMatrix type="matrix" values="0.13725490196078427 0 0 0 0.8627450980392157 0.1333333333333333 0 0 0 0.8666666666666667 0.13725490196078427 0 0 0 0.8627450980392157 0 0 0 1 0" />
+                    <feComponentTransfer />
+                </filter></defs></svg>
+                <img src="https://static.wixstatic.com/media/d307ba_b3ab9914ccc341bbb3eb47f35c0f627c~mv2.png/v1/fill/w_484,h_594,al_c,q_85,enc_auto/greenovation%20logo%20icon%20hex%20gry.png" alt="" className="drawing" />
+            </div>
             <p className="font_7" style={{ fontSize: '20px', lineHeight: '1.7em', textAlign: 'center' }}><span style={{ letterSpacing: '0.05em' }}><span style={{ fontSize: '20px' }}>Wie klingt das, wenn wir für dich arbeiten und du das Geld verdienst? Genau das<br />
                 machen wir! Jeder auf unserer Plattform verkaufte Pflanzenplatz entspricht einem physisch vorhandenen Platz in unserer Produktionsanlage. Wir kümmern uns um deine Pflanze in vollem Umfang und verkaufen nach erfolgter Ernte das Produkt. Nach Abzug der laufenden Kosten, wird der Gewinn zwischen Greenovation und dir 50/50 aufgeteilt.<br />
                 Als einziges Unternehmen in der Schweiz produzieren wir unsere Stecklinge mit dem <span className="color_23"><span style={{ fontWeight: 'bold' }}>In Vitro</span></span> Verfahren und bestätigen den Besitz der Pflanze mit einem <span className="color_23"><span style={{ fontWeight: 'bold' }}>NFT</span></span>. &nbsp;Wir garantieren<br />
@@ -98,7 +135,7 @@ const Section2 = () => {
             </div>
 
             <h1 className="font_0" style={{ fontSize: '15px', textAlign: 'center' }}><span style={{ fontSize: '15px' }}>*zum Vorzugspreis</span></h1>
-
+            <br /><br /><br />
             <p className="font_7" style={{ fontSize: '20px', lineHeight: '1.7em', textAlign: 'center' }}><span style={{ letterSpacing: '0.05em' }}><span style={{ fontSize: '25px' }}><span className="color_23">"Medizinal Cannabis ist der Milliarden-Zukunftsmarkt"</span></span><br />
                 <span style={{ fontSize: '15px' }}>-Peter Thiel</span></span></p>
             <p className="font_7" style={{ fontSize: '15px', lineHeight: '1.7em', textAlign: 'center' }}><span style={{ fontSize: '15px' }}><span style={{ letterSpacing: '0.05em' }}>Gründer von Paypal &amp; erster Investor bei Facebook</span></span></p>
@@ -118,7 +155,7 @@ const Section2 = () => {
 const Section3 = () => {
     return (
         <section id="Section3">
-            <div className="section_wrapper_sm">
+            <div className="section_wrapper_sm section_body">
                 <div id="comp-l6dka9fm" className="_2Hij5 _3bcaz text-center" data-testid="richTextElement"><h1 className="font_0" style={{ fontSize: '29px' }}><span style={{ fontSize: '29px' }}>WAS UNS GEGENÜBER DEN MITBEWERBERN AUSZEICHNET</span></h1></div>
 
                 <div className="d-flex justify-content-between">
@@ -144,7 +181,7 @@ const Section3 = () => {
                         </div>
                     </div>
                     <div className="content_wrapper px-3 px-md-4">
-                        <ul className="font_7" style={{ fontSize: '18px', textAlign: 'left' }}>
+                        <ul className="font_7 w-75 ms-auto" style={{ fontSize: '18px', textAlign: 'left' }}>
                             <li>
                                 <p className="font_7" style={{ fontSize: '18px' }}><span style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.1em' }}>Alle Pflanzenplätze die du kaufst befinden s</span></span><span style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.1em' }}>ich <span style={{ fontWeight: 'bold' }}>in unserer eigenen Anlage</span> in der Schweiz. Wir haben keine unsichere Kooperationen mit fremden Anlagen.</span></span></p>
                             </li>
@@ -277,6 +314,20 @@ const Section6 = () => {
                     <h1 className="font_0 ms-3" style={{ fontSize: '30px' }}><span style={{ fontSize: '30px' }}>BESITZURKUNDE VIA NFT</span></h1>
                 </div>
                 <div className="section_body mt-5">
+                    <div className="body_content_design">
+                        <svg id="svg_comp-l6d92467" className="_2Ea4I"><defs><filter id="lighten-comp-l6d92467" colorInterpolationFilters="sRGB">
+                            <feComponentTransfer result="srcRGB" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 1
+0 0 0 0 1
+0 0 0 0 1
+0 0 0 1 0" in="srcRGB" result="color" />
+                            <feComponentTransfer in="color" result="color_alpha"><feFuncA type="linear" slope="0.46" /></feComponentTransfer>
+                            <feComposite operator="over" in="color_alpha" in2="srcRGB" />
+                            <feComponentTransfer />
+                        </filter></defs></svg>
+
+                        <img src={require('../../../img/pages/homepage/hexgreen.webp')} alt="" />
+                    </div>
                     <p className="font_8" style={{ lineHeight: '1.7em', fontSize: '16px' }}><span style={{ letterSpacing: '0.05em' }}>Als Vorreiter unserer Branche sichern wir die Pflanzenplätze per Blockchain-<br />
                         Technologie und bieten unseren Kunden eine einzigartige Beteiligung an der<br />
                         Produktion. Der Besitz ihres Pflanzenplatzes wird über ihr NFT sichergestellt. Du<br />
@@ -289,22 +340,36 @@ const Section6 = () => {
             </div>
 
             <div className="section_wrapper_sm position-relative">
-                <svg id="svg_comp-l6ciumgw" className="_2Ea4I position-absolute"><defs><filter id="lighten-comp-l6ciumgw" colorInterpolationFilters="sRGB">
-                    <feComponentTransfer result="srcRGB" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 1
-0 0 0 0 1
-0 0 0 0 1
-0 0 0 1 0" in="srcRGB" result="color" />
-                    <feComponentTransfer in="color" result="color_alpha"><feFuncA type="linear" slope="0.46" /></feComponentTransfer>
-                    <feComposite operator="over" in="color_alpha" in2="srcRGB" />
-                    <feComponentTransfer />
-                </filter></defs></svg>
+
+
+
+
 
 
                 <div className="design1">
+                    <svg id="svg_comp-l6d9246e" className="_2Ea4I"><defs><filter id="faded-comp-l6d9246e" colorInterpolationFilters="sRGB">
+                        <feComponentTransfer result="srcRGB" />
+                        <feColorMatrix type="saturate" values="0.2" />
+                        <feComponentTransfer><feFuncR type="linear" slope="0.85" intercept="0.08" />
+                            <feFuncG type="linear" slope="0.85" intercept="0.08" />
+                            <feFuncB type="linear" slope="0.85" intercept="0.08" /></feComponentTransfer>
+                        <feComponentTransfer><feFuncR type="linear" slope="0.9" /><feFuncG type="linear" slope="0.9" /><feFuncB type="linear" slope="0.9" /></feComponentTransfer>
+                        <feColorMatrix type="matrix" values="0.13725490196078427 0 0 0 0.8627450980392157 0.1333333333333333 0 0 0 0.8666666666666667 0.13725490196078427 0 0 0 0.8627450980392157 0 0 0 1 0" />
+                        <feComponentTransfer />
+                    </filter></defs></svg>
                     <img src={require('../../../img/pages/homepage/hexgreen.webp')} alt="" />
                 </div>
                 <div className="design2">
+                    <svg id="svg_comp-l6ciumgw" className="_2Ea4I position-absolute"><defs><filter id="lighten-comp-l6ciumgw" colorInterpolationFilters="sRGB">
+                        <feComponentTransfer result="srcRGB" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 1
+0 0 0 0 1
+0 0 0 0 1
+0 0 0 1 0" in="srcRGB" result="color" />
+                        <feComponentTransfer in="color" result="color_alpha"><feFuncA type="linear" slope="0.46" /></feComponentTransfer>
+                        <feComposite operator="over" in="color_alpha" in2="srcRGB" />
+                        <feComponentTransfer />
+                    </filter></defs></svg>
                     <img src={require('../../../img/pages/homepage/designSec.webp')} alt="" />
                 </div>
 
@@ -366,7 +431,9 @@ const Section7 = () => {
                     <span style={{ letterSpacing: '0.05em' }}>Wie du von der überd</span><span style={{ letterSpacing: '0.05em' }}>urchschnittlichen</span><span style={{ letterSpacing: '0.05em' }}>&nbsp;Rendite profitieren kannst.</span></p>
 
                 <div className="affiliate_card_wrapper">
-                    <div className="affiliate_card">
+
+                    <div className="affiliate_card animated_card">
+
                         <div className="card_head">
                             <div className="img_box">
                                 <img src={require('../../../img/pages/homepage/green_icon.webp')} alt="" />
@@ -382,7 +449,8 @@ const Section7 = () => {
                     </div>
 
 
-                    <div className="affiliate_card">
+                    <div className="affiliate_card animated_card">
+
                         <div className="card_head">
                             <div className="img_box">
                                 <img src={require('../../../img/pages/homepage/green_icon.webp')} alt="" />
@@ -400,6 +468,25 @@ const Section7 = () => {
                                 Du profitierst von jeder Ernte deiner angeworbenen CrowdGrower
                             </span></span></h1>
                         </div>
+                    </div>
+
+                    <div className="card_design_corner corner_left">
+                        <svg id="svg_comp-l6civbha" className="_2Ea4I"><defs><filter id="lighten-comp-l6civbha" colorInterpolationFilters="sRGB">
+                            <feComponentTransfer result="srcRGB" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 1
+0 0 0 0 1
+0 0 0 0 1
+0 0 0 1 0" in="srcRGB" result="color" />
+                            <feComponentTransfer in="color" result="color_alpha"><feFuncA type="linear" slope="0.46" /></feComponentTransfer>
+                            <feComposite operator="over" in="color_alpha" in2="srcRGB" />
+                            <feComponentTransfer />
+                        </filter></defs></svg>
+
+                        <img className='' src={require('../../../img/pages/homepage/hex_circle.webp')} alt="img" />
+                    </div>
+
+                    <div className="card_design_corner corner_right">
+                        <img className='' src={require('../../../img/pages/homepage/hex_circle.webp')} alt="img" />
                     </div>
                 </div>
 
@@ -439,7 +526,7 @@ const Section8 = () => {
         </div>
         <div className="section_body">
             <p className="font_8" style={{ fontSize: '16px' }}>Selbstverständlich haben wir alle möglichen Risiken versichert, damit ihr Investment und ihre Einkünfte abgesichert sind:</p>
-            <ul className="font_8 color_23" style={{ fontSize: '18px', fontWeight: 'bold', listStyle: 'disc' }}>
+            <ul className="font_8 color_23 content_list" style={{ fontSize: '18px', fontWeight: 'bold', listStyle: 'disc' }}>
                 <li>
                     <p className="font_8 py-0 my-0" style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.05em' }}><span style={{ fontSize: '18px' }}><span style={{ fontWeight: 'bold' }}><span className="color_23">Ertragsausfall&nbsp;</span></span></span></span></p>
                 </li>

@@ -104,10 +104,21 @@
   width: calc(100% - 706px);
   margin: auto;
 }
+#Homepage #Section2 .img_wrapper svg {
+  display: none;
+}
 #Homepage #Section2 .img_wrapper img {
   position: relative;
   z-index: 2;
   filter: url(https://static.wixstatic.com/media/d307ba_a9ab04576f1b48f5bbfc82278fa8f486~mv2.png/v1/fill/w_353,h_433,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon.png);
+}
+#Homepage #Section2 .img_wrapper .left_img {
+  --filter-effect-svg-url: url(#lighten-comp-l6bvzlof);
+  filter: var(--filter-effect-svg-url);
+}
+#Homepage #Section2 .img_wrapper .right_img {
+  --filter-effect-svg-url: url(#lighten-comp-l6bw28yg);
+  filter: var(--filter-effect-svg-url);
 }
 #Homepage #Section2 .img_wrapper .img_animated {
   position: absolute;
@@ -125,10 +136,20 @@
   margin: auto;
   position: relative;
 }
+#Homepage #Section2 .content_description svg {
+  display: none;
+}
 #Homepage #Section2 .content_description .drawing {
   position: absolute;
-  right: 0px;
-  top: 0;
+  right: -22%;
+  top: -35%;
+  z-index: -1;
+  --filter-effect-svg-url: url(#faded-comp-l6bz75cu);
+  filter: var(--filter-effect-svg-url);
+}
+#Homepage #Section3 .section_body {
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 #Homepage #Section3 .img_mask_box {
   position: relative;
@@ -139,9 +160,7 @@
 }
 #Homepage #Section3 .img_mask_box .mask_wrapper img:nth-child(1) {
   position: absolute;
-  left: -12%;
   z-index: 2;
-  top: 35%;
   width: 211px;
   height: 250px;
   -o-object-fit: cover;
@@ -152,10 +171,12 @@
   filter: var(--filter-effect-svg-url);
   -webkit-mask-position: var(--mask-position, 0);
   -webkit-mask-repeat: var(--mask-repeat, no-repeat);
+  left: -66%;
+  top: 45%;
 }
 #Homepage #Section3 .img_mask_box .mask_wrapper img:nth-child(2) {
   position: absolute;
-  left: 0%;
+  left: -30%;
   top: 12%;
   width: 303px;
   height: 359px;
@@ -305,25 +326,41 @@
   top: 35px;
 }
 #Homepage #Section6 {
+  overflow: hidden;
   --filter-effect-svg-url: url(#lighten-comp-l6ciumgw);
 }
 #Homepage #Section6 .section_wrapper_sm {
   position: relative;
 }
+#Homepage #Section6 .section_header {
+  margin-top: 110px;
+}
 #Homepage #Section6 .design1,
 #Homepage #Section6 .design2 {
   position: absolute;
   z-index: 2;
-  filter: var(--filter-effect-svg-url);
+}
+#Homepage #Section6 .design1 svg,
+#Homepage #Section6 .design2 svg {
+  position: absolute;
 }
 #Homepage #Section6 .design1 {
   top: -50px;
   left: -100px;
+  --filter-effect-svg-url: url(#faded-comp-l6d9246e);
   filter: var(--filter-effect-svg-url);
 }
 #Homepage #Section6 .design2 {
   top: -30px;
   right: -190px;
+  filter: var(--filter-effect-svg-url);
+}
+#Homepage #Section6 .section_body .body_content_design {
+  position: absolute;
+  right: 7%;
+  top: 30px;
+  --filter-effect-svg-url: url(#lighten-comp-l6d92467);
+  filter: var(--filter-effect-svg-url);
 }
 #Homepage #Section6 .img_gallery {
   position: relative;
@@ -400,8 +437,28 @@
   margin-top: 90px;
   margin-bottom: 100px;
   justify-content: center;
+  position: relative;
+}
+#Homepage #Section7 .section_wrapper_sm .affiliate_card_wrapper .card_design_corner {
+  position: absolute;
+  z-index: -1;
+  filter: var(--filter-effect-svg-url);
+}
+#Homepage #Section7 .section_wrapper_sm .affiliate_card_wrapper .card_design_corner svg {
+  display: none;
+}
+#Homepage #Section7 .section_wrapper_sm .affiliate_card_wrapper .card_design_corner.corner_left {
+  top: -33%;
+  left: -6%;
+  --filter-effect-svg-url: url(#lighten-comp-l6civbha);
+}
+#Homepage #Section7 .section_wrapper_sm .affiliate_card_wrapper .card_design_corner.corner_right {
+  top: 55%;
+  right: -4%;
+  --filter-effect-svg-url: url(#lighten-comp-l6civbha);
 }
 #Homepage #Section7 .section_wrapper_sm .affiliate_card_wrapper .affiliate_card {
+  position: relative;
   width: 336px;
   height: 363px;
   box-shadow: 0px 1px 13px 3px rgba(0, 0, 0, 0.6), 0 1px 4px rgba(0, 0, 0, 0.6);
@@ -409,6 +466,28 @@
   border-radius: 15px 23px 23px 15px;
   transition: all 0.4s ease-in-out 0s;
   padding-top: 20px;
+  transform-style: preserve-3d;
+  perspective: 3000;
+}
+#Homepage #Section7 .section_wrapper_sm .affiliate_card_wrapper .affiliate_card.animated_card {
+  -webkit-animation: 1s linear animated_card;
+          animation: 1s linear animated_card;
+}
+@-webkit-keyframes animated_card {
+  0% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes animated_card {
+  0% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
 }
 #Homepage #Section7 .section_wrapper_sm .affiliate_card_wrapper .affiliate_card:first-child {
   margin-right: 105px;
@@ -441,14 +520,14 @@
   display: block;
 }
 #Homepage #Section8 {
-  height: 515px;
   width: 1392px;
   margin: auto;
   position: relative;
+  overflow: hidden;
 }
 #Homepage #Section8 .drawing {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
   height: 100%;
@@ -456,15 +535,18 @@
   width: 100%;
   top: 0;
   left: 0;
+  pointer-events: none;
 }
 #Homepage #Section8 .section_header {
   position: relative;
   --filter-effect-svg-url: url(#faded-comp-l6ciwoaf);
+  padding-top: 80px;
 }
 #Homepage #Section8 .section_header .img_xl {
   position: absolute;
-  left: -100%;
-  top: -200%;
+  left: -78%;
+  top: -27%;
+  z-index: -1;
 }
 #Homepage #Section8 .section_header .img_xl img {
   filter: var(--filter-effect-svg-url);
@@ -473,6 +555,10 @@
 #Homepage #Section8 .section_header {
   width: 660px;
   margin-left: 230px;
+}
+#Homepage #Section8 .section_body .content_list {
+  padding-top: 40px;
+  padding-bottom: 250px;
 }
 #Homepage #Section9 .section_body {
   position: static;
