@@ -10,4 +10,11 @@ footer#Footer .footer_light_text {
 }
 footer#Footer .footer_light_text p {
   letter-spacing: 0.3em;
+}
+footer#Footer #icon_list svg {
+  transition: 0.3s;
+}
+footer#Footer #icon_list svg:hover {
+  scale: 0.7;
+  fill: black;
 }/*# sourceMappingURL=Footer.css.map */
