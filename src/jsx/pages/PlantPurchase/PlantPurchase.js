@@ -25,9 +25,12 @@ function PlantPurchase(props) {
             title: `19'800.-`,
             subtitle: 'SEED PACKAGE',
             img: require('../../../img/pages/PlantPurchase/tree.webp'),
-            description: `25 Pflanzenplätze
-            Empfehlungsbonus:
-            15%  Level 1 / 10%  Level 2`,
+            description: <>25 Pflanzenplätze
+                Empfehlungsbonus :
+                15%  Level 1 / 10%  Level 2
+                <br />
+                <span style={{ fontWeight: 'bold' }}><span className="color_14"><span style={{ fontSize: '22px' }}>EXCLUSIV nur 15-mal</span></span></span>
+            </>,
             link: '#',
             link_name: 'PFLANZE KAUFEN'
         },

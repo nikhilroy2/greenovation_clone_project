@@ -71,6 +71,9 @@
 #PlantPurchase .card_wrapper .card_item:hover {
   background: rgb(var(--color_23));
 }
+#PlantPurchase .card_wrapper .card_item:hover .color_14 {
+  color: #fff;
+}
 #PlantPurchase .card_wrapper .card_item:hover .btn_outline_green:hover {
   background: inherit;
   color: #fff;

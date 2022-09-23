@@ -26,6 +26,7 @@
         --shc-mutated-brightness: 128, 128, 128;
         margin-top: 70px;
         justify-content: center;
+
         .card_item {
             transition: all 0.4s ease-in-out 0s;
             //border: var(--container-corvid-border-width, var(--brw, 1px)) solid var(--container-corvid-border-color, rgba(var(--brd, var(--color_15)), var(--alpha-brd, 1)));
@@ -37,6 +38,7 @@
             position: relative;
             padding: 1rem;
             margin-right: 44px;
+
             &:last-child {
                 margin-right: 0px;
             }
@@ -77,6 +79,10 @@
             &:hover {
                 background: rgb(var(--color_23));
 
+                .color_14 {
+                    color: #fff;
+                }
+
                 .btn_outline_green {
                     &:hover {
                         background: inherit;
@@ -107,10 +113,12 @@
                 .card_description {
                     color: #fff;
                 }
+
             }
         }
     }
-    .section_footer{
+
+    .section_footer {
         width: 1002px;
         margin: auto;
         margin-top: 90px;
