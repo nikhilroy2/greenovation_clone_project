@@ -43,6 +43,10 @@ header#Header .header_position {
   border-bottom: var(--brwb, 0) solid var(--screenwidth-corvid-border-color, rgba(var(--brd, var(--color_15)), var(--alpha-brd, 1)));
   display: flex;
   justify-content: flex-end;
+  transition: 0.5s;
+}
+header#Header .header_position.header_scroll_fixed {
+  box-shadow: var(--shd-scrl, 0 0 5px rgba(0, 0, 0, 0.5));
 }
 header#Header .header_wrapper {
   transition: all 0.3s ease;

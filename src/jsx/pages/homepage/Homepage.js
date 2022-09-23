@@ -1,28 +1,29 @@
 import React, { useState } from 'react';
 import AOS from 'aos';
 import '../../../scss/pages/homepage/Homepage.css';
-import { useRecoilState } from 'recoil';
+import { Link, useLocation } from 'react-router-dom';
 AOS.init();
 
+
 function Homepage(props) {
-    
+    const isEnglish = useLocation().pathname === '/en';
     return (
         <div id='Homepage'>
-            <Section1></Section1>
-            <Section2></Section2>
-            <Section3></Section3>
-            <Section4></Section4>
-            <Section5></Section5>
-            <Section6></Section6>
-            <Section7></Section7>
-            <Section8></Section8>
-            <Section9></Section9>
+            <Section1 isEnglish={isEnglish}></Section1>
+            <Section2 isEnglish={isEnglish}></Section2>
+            <Section3 isEnglish={isEnglish}></Section3>
+            <Section4 isEnglish={isEnglish}></Section4>
+            <Section5 isEnglish={isEnglish}></Section5>
+            <Section6 isEnglish={isEnglish}></Section6>
+            <Section7 isEnglish={isEnglish}></Section7>
+            <Section8 isEnglish={isEnglish}></Section8>
+            <Section9 isEnglish={isEnglish}></Section9>
         </div>
     );
 }
 
 export default Homepage;
-const Section1 = () => {
+const Section1 = ({ isEnglish }) => {
     return <section id="Section1">
         <div className="header_placeholder"></div>
         <video loop src={require('../../../media/file.mp4')} autoPlay={true} muted={true}></video>
@@ -38,29 +39,39 @@ const Section1 = () => {
                     <div className="img_sm">
                         <img className='' src={require('../../../img/icons/GreenovationIconSm.webp')} alt="GreenovationIconSm.webp" />
                     </div>
-                    <a href='#' className="btn_content_footer">
-                        KAUFE JETZT DEINE ERSTE PFLANZE
+                    <Link to="/pflanzenkauf" className="btn_content_footer">
+                        {isEnglish ? 'BUY YOUR FIRST PLANT NOW' : 'KAUFE JETZT DEINE ERSTE PFLANZE'}
                         <svg fill='white' style={{ height: '10px' }} className="ms-2" data-bbox="13.05 2.55 33.878 54.8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
                             <g>
                                 <path d="M46.5 28.9L20.6 3c-.6-.6-1.6-.6-2.2 0l-4.8 4.8c-.6.6-.6 1.6 0 2.2l19.8 20-19.9 19.9c-.6.6-.6 1.6 0 2.2l4.8 4.8c.6.6 1.6.6 2.2 0l21-21 4.8-4.8c.8-.6.8-1.6.2-2.2z" />
                             </g>
                         </svg>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
     </section>
 }
 
-const Section2 = () => {
+const Section2 = ({ isEnglish }) => {
     return <section id="Section2">
-        <h1 className="font_0" style={{ fontSize: '25px', textAlign: 'center', marginBottom: '55px' }}><span style={{ color: '#85C43F' }}><span style={{ fontSize: '25px' }}>Der am schnellsten wachsende Zukunftsmarkt</span></span></h1>
+        <h1 className="font_0" style={{ fontSize: '25px', textAlign: 'center', marginBottom: '55px' }}><span style={{ color: '#85C43F' }}><span style={{ fontSize: '25px' }}>
+            {isEnglish ? 'The fastest growing future market' : 'Der am schnellsten wachsende Zukunftsmarkt'}
+        </span></span></h1>
 
         <p className="text_content font_0">
-            <span style={{ letterSpacing: '0.05em' }}>Profitiere von den ausserordentlichen Renditen des Cannabismarktes.&nbsp; Wir ermöglichen es Kunden von der ganzen Welt an diesem teilzuhaben - dies ohne die hohen Hürden von Finanzierung, Gesetzgebung und Know-How.</span>
+            <span style={{ letterSpacing: '0.05em' }}>
+                {isEnglish ? 'Profit from the extraordinary returns of the cannabis market.  We enable customers from all over the world to participate in it - without the high hurdles of financing, legislation and know-how.' : 'Profitiere von den ausserordentlichen Renditen des Cannabismarktes.&nbsp; Wir ermöglichen es Kunden von der ganzen Welt an diesem teilzuhaben - dies ohne die hohen Hürden von Finanzierung, Gesetzgebung und Know-How.'}
+            </span>
         </p>
 
-        <h1 className="font_0" style={{ fontSize: '25px', textAlign: 'center' }}><span className="color_23"><span style={{ fontSize: '25px' }}>LEBENSLANG GELD</span></span><span className="color_14"><span style={{ fontSize: '25px' }}>&nbsp;ERHALTEN IN 5 SCHRITTEN</span></span></h1>
+        <h1 className="font_0" style={{ fontSize: '25px', textAlign: 'center' }}><span className="color_23">
+            <span style={{ fontSize: '25px' }}>
+                {isEnglish ? 'GET MONEY FOR LIFE' : 'LEBENSLANG GELD'}
+            </span></span>
+            <span className="color_14"><span style={{ fontSize: '25px' }}>
+                {isEnglish ? 'IN 5 STEPS' : '&nbsp;ERHALTEN IN 5 SCHRITTEN'}
+            </span></span></h1>
 
         <div className="section_wrapper">
             <div className="img_wrapper d-flex justify-content-between w-100">
@@ -98,7 +109,12 @@ const Section2 = () => {
         </div>
         <br /><br /><br /><br />
         <br />
-        <p className="font_7" style={{ lineHeight: '1.7em', textAlign: 'center', fontSize: '24px' }}><span style={{ color: '#85C43F' }}><span style={{ fontWeight: 'bold' }}><span style={{ fontSize: '20px', letterSpacing: '0.05em' }}>Partizipiere am Erfolg des i</span><span style={{ fontSize: '20px', letterSpacing: '0.0416667em' }}>nnovativsten</span><span style={{ fontSize: '20px', letterSpacing: '0.05em' }}>&nbsp;Marktteilnehmers im Crowdgrowing.</span></span></span></p>
+        <p className="font_7" style={{ lineHeight: '1.7em', textAlign: 'center', fontSize: '24px' }}>
+            <span style={{ color: '#85C43F' }}><span style={{ fontWeight: 'bold', fontSize: '20px', letterSpacing: '.05em' }}>
+
+                {isEnglish ? 'Participate in the success of the most innovative market player in crowdgrowing.' : 'Partizipiere am Erfolg des i nnovativsten Marktteilnehmers im Crowdgrowing.'}
+
+            </span></span></p>
         <br /><br /><br /> <br />
         <div className="content_description">
             <div className="">
@@ -121,7 +137,6 @@ const Section2 = () => {
                 Unser State oft the Art Equipment und unsere langjährige Erfahrung optimieren<br />
                 den Ertrag langfristig. Wir ernten seit Jahren im Durchschnitt 22.7 % mehr als<br />
                 unsere Mitbewerber.</span></span></p>
-
             <br />
             <div className="text-center">
                 <span style={{ letterSpacing: '0.05em' }}><span style={{ fontSize: '20px' }}>Willkommen bei Greenovation - willkommen in der Zukunft.</span></span>
