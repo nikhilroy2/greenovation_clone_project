@@ -1,0 +1,101 @@
+#PlantPurchase {
+  height: 936px;
+  position: relative;
+  margin-top: 94px;
+}
+#PlantPurchase .design {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.43;
+}
+#PlantPurchase .card_wrapper {
+  display: flex;
+  flex-grow: row wrap;
+  --brw: 0px;
+  --brd: var(--color_11);
+  --bg: var(--color_11);
+  --rd: 15px 23px 23px 15px;
+  --shd: 0.00px 1.00px 13px 3px rgba(0, 0, 0, 0.6);
+  --alpha-bg: 1;
+  --alpha-brd: 1;
+  --shc-mutated-brightness: 128, 128, 128;
+  margin-top: 70px;
+  justify-content: center;
+}
+#PlantPurchase .card_wrapper .card_item {
+  transition: all 0.4s ease-in-out 0s;
+  background-color: var(--container-corvid-background-color, rgba(var(--bg, var(--color_11)), var(--alpha-bg, 1)));
+  border-radius: var(--rd, 5px);
+  box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, 0.6));
+  width: 336px;
+  min-height: 395px;
+  position: relative;
+  padding: 1rem;
+  margin-right: 44px;
+}
+#PlantPurchase .card_wrapper .card_item:last-child {
+  margin-right: 0px;
+}
+#PlantPurchase .card_wrapper .card_item .card_header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 35px;
+  text-align: center;
+}
+#PlantPurchase .card_wrapper .card_item .card_body {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#PlantPurchase .card_wrapper .card_item .card_body .card_description {
+  font-size: 22px;
+  text-align: center;
+}
+#PlantPurchase .card_wrapper .card_item .card_footer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  bottom: 10%;
+}
+#PlantPurchase .card_wrapper .card_item:hover {
+  background: rgb(var(--color_23));
+}
+#PlantPurchase .card_wrapper .card_item:hover .btn_outline_green:hover {
+  background: inherit;
+  color: #fff;
+}
+#PlantPurchase .card_wrapper .card_item:hover .card_header {
+  color: white;
+}
+#PlantPurchase .card_wrapper .card_item:hover .card_header .color_23 {
+  color: white !important;
+}
+#PlantPurchase .card_wrapper .card_item:hover .card_header .tree_img {
+  display: flex !important;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+#PlantPurchase .card_wrapper .card_item:hover .card_header .content1 {
+  display: none;
+}
+#PlantPurchase .card_wrapper .card_item:hover .card_description {
+  color: #fff;
+}
+#PlantPurchase .section_footer {
+  width: 1002px;
+  margin: auto;
+  margin-top: 90px;
+  text-align: center;
+}/*# sourceMappingURL=PlantPurchase.css.map */
