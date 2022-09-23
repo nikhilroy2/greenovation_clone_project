@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../../scss/pages/AboutUs/AboutUs.css';
+import AboutCard from '../../components/AboutCard/AboutCard';
 function AboutUs(props) {
     return (
         <div id='AboutUs'>
@@ -65,6 +66,7 @@ const Section2 = () => {
             <div className="section_header">
                 <h2 className="font_0 my-0" style={{ fontSize: '56px', lineHeight: 'normal', textAlign: 'center' }}><span className="color_23"><span style={{ letterSpacing: 'normal' }}><span style={{ fontSize: '56px' }}>Meet the Team</span></span></span></h2>
             </div>
+            <AboutCard></AboutCard>
         </section>
     )
 }
