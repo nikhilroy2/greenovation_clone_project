@@ -1143,4 +1143,16 @@ a.select_active {
   height: 18px;
   stroke: #fff;
   stroke-width: 15;
+}
+
+.img_cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
+.icon_size {
+  width: 50px;
+  height: 61px;
 }/*# sourceMappingURL=global.css.map */

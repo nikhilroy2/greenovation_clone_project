@@ -12,7 +12,7 @@ function Header(props) {
         {
             id: 2,
             name: isEnglish ? 'About us' : 'Über uns',
-            link: '/uber-uns'
+            link: '/about_us'
         },
         {
             id: 3,
