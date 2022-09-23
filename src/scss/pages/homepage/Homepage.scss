@@ -186,13 +186,17 @@
           filter: var(--filter-effect-svg-url);
           -webkit-mask-position: var(--mask-position, 0);
           -webkit-mask-repeat: var(--mask-repeat, no-repeat);
-          left: -66%;
+          left: -75%;
           top: 45%;
+
+          &.aos-animate {
+            left: -66%;
+          }
         }
 
         img:nth-child(2) {
           position: absolute;
-          left: -30%;
+          left: -40%;
           top: 12%;
           width: 303px;
           height: 359px;
@@ -207,6 +211,10 @@
           -webkit-mask-position: var(--mask-position, 0);
           -webkit-mask-size: var(--mask-size, 100% 100%);
           -webkit-mask-repeat: var(--mask-repeat, no-repeat);
+
+          &.aos-animate {
+            left: -30%;
+          }
         }
       }
     }
@@ -267,7 +275,8 @@
     height: 728px;
     position: relative;
     overflow: hidden;
-
+    width: 100%;
+    overflow: hidden;
     .drawing {
       height: 100%;
       position: absolute;
@@ -314,7 +323,7 @@
         position: absolute;
         z-index: 3;
         margin: 0px 0px 0px calc((100% - 980px) * 0.5);
-        left: -305px;
+        left: -405px;
         grid-area: 3 / 1 / 8 / 2;
         justify-self: start;
         align-self: start;
@@ -323,17 +332,25 @@
         -webkit-mask-image: var(--mask-image, none);
         -webkit-mask-position: var(--mask-position, 0);
         -webkit-mask-repeat: var(--mask-repeat, no-repeat);
+        transition: 1s;
+        &.aos-animate{
+          left: -305px;
+        }
       }
 
       .grenno_circle {
         position: absolute;
         margin: 67px 0px -133px calc((100% - 980px) * 0.5);
-        left: 29px;
+        left: 70%;
         grid-area: 1 / 1 / 2 / 2;
         justify-self: start;
         align-self: start;
         z-index: 3;
         top: 40px;
+        transition: 1s;
+        &.aos-animate{
+          left: 29px;
+        }
       }
 
       .edit_lg {

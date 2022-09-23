@@ -38,23 +38,16 @@ header#Header {
     height: 93px;
     width: 100%;
     box-shadow: 0.57px -0.82px 22px 5px rgba(0, 0, 0, 0.6);
-    background-color: var(
-      --screenwidth-corvid-background-color,
-      rgba(var(--bg, var(--color_11)), var(--alpha-bg, 1))
-    );
-    border-top: var(--brwt, 0) solid
-      var(
-        --screenwidth-corvid-border-color,
-        rgba(var(--brd, var(--color_15)), var(--alpha-brd, 1))
-      );
-    border-bottom: var(--brwb, 0) solid
-      var(
-        --screenwidth-corvid-border-color,
-        rgba(var(--brd, var(--color_15)), var(--alpha-brd, 1))
-      );
+    background-color: var(--screenwidth-corvid-background-color,
+        rgba(var(--bg, var(--color_11)), var(--alpha-bg, 1)));
+    border-top: var(--brwt, 0) solid var(--screenwidth-corvid-border-color,
+        rgba(var(--brd, var(--color_15)), var(--alpha-brd, 1)));
+    border-bottom: var(--brwb, 0) solid var(--screenwidth-corvid-border-color,
+        rgba(var(--brd, var(--color_15)), var(--alpha-brd, 1)));
     display: flex;
     justify-content: flex-end;
   }
+
   .header_wrapper {
     transition: all 0.3s ease;
     display: flex;
@@ -63,24 +56,29 @@ header#Header {
     width: 100%;
     max-width: 1600px;
   }
+
   .navbar_list {
     display: flex;
     align-items: center;
     flex-grow: 1;
     justify-content: flex-end;
+
     a {
       display: inline-block;
       padding: 15px;
       color: #474747;
       transition: all 0.3s ease;
+
       &.active_nav {
         opacity: 0.75;
       }
+
       &:hover {
         color: #15c719;
       }
     }
   }
+
   .login_btn {
     background: #000;
     text-transform: uppercase;
@@ -92,11 +90,13 @@ header#Header {
     padding: 4px 10px;
     margin-left: 45px;
     font: normal normal normal 16px/1.4em montserrat, sans-serif;
+
     &:hover {
       color: #222;
       background: #fff;
     }
   }
+
   .dropdown_leng {
     position: relative;
     width: 90px;
@@ -107,9 +107,15 @@ header#Header {
     margin-left: 30px;
     border-radius: 10px;
     margin-right: 100px;
+    &.leng_active {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
     &:hover {
       background: #323232;
     }
+
     .dropdown_item {
       display: flex;
       justify-content: center;
@@ -117,18 +123,22 @@ header#Header {
       height: 100%;
       width: 100%;
       z-index: 1;
+
       svg {
         margin-left: 13px;
+        fill: #fff;
       }
     }
+
     img {
       height: 20px;
     }
+
     .dropdown_action {
       position: absolute;
       justify-content: flex-start;
       top: 96%;
-      background: rgba(0, 0, 0, 0.26);
+      background: rgba(0, 0, 0, 0.3);
       border-radius: 0 0 15px 15px;
       padding-left: 17px;
       z-index: 2;

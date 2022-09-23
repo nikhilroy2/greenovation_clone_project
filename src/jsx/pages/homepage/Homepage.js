@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import AOS from 'aos';
 import '../../../scss/pages/homepage/Homepage.css';
-
+import { useRecoilState } from 'recoil';
 AOS.init();
 
 function Homepage(props) {
+    
     return (
         <div id='Homepage'>
             <Section1></Section1>
@@ -88,7 +89,6 @@ const Section2 = () => {
                         <feComposite operator="over" in="color_alpha" in2="srcRGB" />
                         <feComponentTransfer />
                     </filter></defs></svg>
-
                     <img className='right_img' src="https://static.wixstatic.com/media/d307ba_766e1eb74e9944d2aa78ba2c83f6eeef~mv2.png/v1/fill/w_324,h_398,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/greenovation%20logo%20icon_edited.png" alt="greenovation logo icon_edited.png" style={{ width: '324px', height: '398px', objectFit: 'cover', objectPosition: '50% 50%' }} />
                 </div>
                 <div className="img_animated" data-aos="fade-right" data-aos-once="true" >
@@ -160,8 +160,8 @@ const Section3 = () => {
 
                 <div className="d-flex justify-content-between">
                     <div className="img_mask_box flex-grow-1">
-                        <div className="mask_wrapper">
-                            <img src={require('../../../img/pages/homepage/mask_img1.webp')} alt="" />
+                        <div className="mask_wrapper "  >
+                            <img data-aos-delay="400" data-aos-duration="600" className='img_animated' data-aos-once="true" data-aos="fade-right" src={require('../../../img/pages/homepage/mask_img1.webp')} alt="" />
                             <div className="box">
                                 <svg id="svg_comp-l6dkg4bp" className="position-absolute _2Ea4I"><defs><filter id="ink-comp-l6dkg4bp" colorInterpolationFilters="sRGB">
                                     <feComponentTransfer result="srcRGB" />
@@ -176,7 +176,7 @@ const Section3 = () => {
                                     <feColorMatrix type="saturate" values={0} />
                                     <feComponentTransfer />
                                 </filter></defs></svg>
-                                <img src={require('../../../img/pages/homepage/mask_img2.webp')} alt="" />
+                                <img data-aos-delay="300" data-aos-duration="400" className='img_animated' data-aos="fade-right" src={require('../../../img/pages/homepage/mask_img2.webp')} alt="" />
                             </div>
                         </div>
                     </div>
@@ -272,10 +272,10 @@ const Section5 = () => {
                     <feComponentTransfer />
                 </filter></defs></svg>
 
-                <img className='canna_img' src={require('../../../img/pages/homepage/cannabis.webp')} alt="" />
+                <img className='canna_img img_animated' data-aos="fade-right" data-aos-once="true" src={require('../../../img/pages/homepage/cannabis.webp')} alt="" />
             </div>
             <div className="box">
-                <img className='grenno_circle' src={require('../../../img/pages/homepage/greenovation_animated.webp')} alt="" />
+                <img className='grenno_circle img_animated' data-aos="fade-right" data-aos-once="true" src={require('../../../img/pages/homepage/greenovation_animated.webp')} alt="" />
             </div>
             <div className="box">
                 <img className='edit_lg' src={require('../../../img/pages/homepage/icon_edited_lg.webp')} alt="" />

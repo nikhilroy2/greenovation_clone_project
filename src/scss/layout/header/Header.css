@@ -97,6 +97,10 @@ header#Header .dropdown_leng {
   border-radius: 10px;
   margin-right: 100px;
 }
+header#Header .dropdown_leng.leng_active {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
 header#Header .dropdown_leng:hover {
   background: #323232;
 }
@@ -110,6 +114,7 @@ header#Header .dropdown_leng .dropdown_item {
 }
 header#Header .dropdown_leng .dropdown_item svg {
   margin-left: 13px;
+  fill: #fff;
 }
 header#Header .dropdown_leng img {
   height: 20px;
@@ -118,7 +123,7 @@ header#Header .dropdown_leng .dropdown_action {
   position: absolute;
   justify-content: flex-start;
   top: 96%;
-  background: rgba(0, 0, 0, 0.26);
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 0 0 15px 15px;
   padding-left: 17px;
   z-index: 2;
