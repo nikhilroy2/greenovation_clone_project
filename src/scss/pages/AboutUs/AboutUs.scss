@@ -1,6 +1,6 @@
 #AboutUs {
     #Section1 {
-        height: 1082px;
+        min-height: 1082px;
         position: relative;
 
         .design {
@@ -71,6 +71,70 @@
                     align-self: start;
                     width: 735px;
                 }
+
+                &:nth-child(5) {
+                    width: 686px;
+                    height: 329px;
+                    position: relative;
+                    margin: 5px 0px 36px calc((100% - 980px) * 0.5);
+                    left: 0px;
+                    grid-area: 3 / 1 / 4 / 2;
+                    justify-self: start;
+                    align-self: start;
+                }
+
+                &:nth-child(6) {
+                    position: relative;
+                    margin: 0px 0px 41px calc((100% - 980px) * 0.5);
+                    left: 685px;
+                    grid-area: 3 / 1 / 4 / 2;
+                    justify-self: start;
+                    align-self: start;
+                    height: 329px;
+                    --bg-overlay-color: rgb(33, 33, 33);
+                    --bg-gradient: none;
+                    --fill-layer-image-opacity: 1;
+                    --fill-layer-video-opacity: 1;
+                    --fill-container-overflow: visible;
+                    --fill-transform: rotate(0.01deg);
+                    --border-compensate-margin: 0px;
+                    --fill-layer-background-overlay-transform: translateZ(0);
+                    --mask-image: url(data:image/svg+xml,%3Csvg preserveAspectRatio='none' data-bbox='42 33.5 116 133' viewBox='42 33.5 116 133' height='200' width='200' xmlns='http://www.w3.org/2000/svg' data-type='color'%3E%3Cg%3E%3Cpath fill='%23F7D5D8' d='M94.3 108.3l63.7 25V66.7l-58-33.2-58 33.2L77.8 100l16.5 8.3z' data-color='1'/%3E%3Cpath fill='%238CAEA8' d='M42 66.7v66.6l46.8-10.6L100 100 45.1 68.3 42 66.7z' data-color='2'/%3E%3Cpath fill='%23000010' d='M42 133.3l58 33.2 58-33.2-58-33.3-58 33.3z' data-color='3'/%3E%3C/g%3E%3C/svg%3E%0A);
+                    --mask-position: 0% 0%;
+                    --mask-size: 100% 100%;
+                    --mask-repeat: no-repeat;
+                    height: 329px;
+
+                    img,
+                    video {
+                        -webkit-mask-image: var(--mask-image, none);
+                        -webkit-mask-position: var(--mask-position, 0);
+                        -webkit-mask-size: var(--mask-size, 100%);
+                        -webkit-mask-repeat: var(--mask-repeat, no-repeat);
+                        height: 100%;
+                        width: 287px;
+                    }
+                }
+            }
+        }
+    }
+
+    #Section2 {
+        .section_header {
+            margin-top: 83px;
+            padding-bottom: 13px;
+            margin-bottom: 13px;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 5px;
+                left: 50%;
+                top: 100%;
+                transform: translateX(-50%);
+                border-top: var(--lnw,2px) solid rgba(var(--brd,var(--color_15)),var(--alpha-brd,1));
             }
         }
     }
