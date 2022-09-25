@@ -1,0 +1,81 @@
+#Nft {
+    #Section1 {
+        height: 552px;
+        position: relative;
+        border-bottom: 1px solid #000;
+        margin-bottom: 230px;
+
+        .design {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.43;
+            z-index: -2;
+        }
+
+        .section_wrapper {
+            padding-top: 55px;
+
+            .section_body {
+                --mask-image: url(data:image/svg+xml,%3Csvg preserveAspectRatio='none' data-bbox='32.5 20 135 160' viewBox='32.5 20 135 160' height='200' width='200' xmlns='http://www.w3.org/2000/svg' data-type='shape'%3E%3Cg%3E%3Cpath d='M167.5 140L100 180l-67.5-40V60L100 20l67.5 40v80z'/%3E%3C/g%3E%3C/svg%3E%0A);
+                --mask-position: 0% 0%;
+                --mask-size: 100% 100%;
+                --mask-repeat: no-repeat;
+
+                .mask_box {
+                    -webkit-mask-image: var(--mask-image, none);
+                    -webkit-mask-position: var(--mask-position, 0);
+                    -webkit-mask-size: var(--mask-size, 100% 100%);
+                    -webkit-mask-repeat: var(--mask-repeat, no-repeat);
+                    width: 414px;
+                    height: 491px;
+                    object-fit: cover;
+                    margin-top: 32px;
+                }
+
+                .content_box {
+                    position: absolute;
+                    margin: 100px 0px 47px calc((100% - 980px) * 0.5);
+                    left: 352px;
+                    grid-area: 3 / 1 / 4 / 2;
+                    justify-self: start;
+                    align-self: start;
+                    width: 699px;
+                }
+            }
+        }
+    }
+
+    #Section2 {
+        height: 595px;
+        position: relative;
+
+        .design {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+
+            video {
+                width: 100%;
+                height: 100%;
+                opacity: .4;
+            }
+        }
+
+        .content_box {
+            position: absolute;
+            margin: 181px 0px 10px calc((100% - 980px) * 0.5);
+            left: 327px;
+            grid-area: 1 / 1 / 2 / 2;
+            justify-self: start;
+            align-self: start;
+            width: 631px;
+            top: 0;
+        }
+    }
+}

@@ -36,7 +36,7 @@ function PlantPurchase(props) {
         },
     ]
     return (
-        <div id='PlantPurchase'>
+        <div id='PlantPurchase' className='header_margin'>
             <div className="design">
                 <img className='img_cover' src={require('../../../img/pages/PlantPurchase/mv2.webp')} alt="" />
             </div>
