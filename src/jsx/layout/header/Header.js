@@ -32,7 +32,7 @@ function Header(props) {
         {
             id: 6,
             name: 'In Vitro',
-            link: '/invitro'
+            link: '/in-vitro'
         },
     ]
     const pathName = window.location.pathname;

@@ -1,1 +1,65 @@
-/*# sourceMappingURL=InVitro.css.map */
+#InVitro {
+  width: 100%;
+  overflow: hidden;
+  min-height: 90vh;
+}
+#InVitro #Section1 {
+  position: relative;
+  min-height: 574px;
+}
+#InVitro #Section1 .drawing {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  opacity: 0.4;
+}
+#InVitro #Section1 .section_wrapper .section_header {
+  padding-top: 70px;
+}
+#InVitro #Section1 .section_wrapper .section_body {
+  position: relative;
+}
+#InVitro #Section1 .section_wrapper .section_body .mask_box {
+  --mask-image: url(data:image/svg+xml,%3Csvg preserveAspectRatio="none" data-bbox="32.5 20 135 160" viewBox="32.5 20 135 160" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape"%3E%3Cg%3E%3Cpath d="M167.5 140L100 180l-67.5-40V60L100 20l67.5 40v80z"/%3E%3C/g%3E%3C/svg%3E%0A);
+  --mask-position: 0% 0%;
+  --mask-size: 100% 100%;
+  --mask-repeat: no-repeat;
+  position: relative;
+}
+#InVitro #Section1 .section_wrapper .section_body .mask_box .mask_box_lg {
+  height: 491px;
+  width: 415px;
+  -webkit-mask-image: var(--mask-image, none);
+  -webkit-mask-position: var(--mask-position, 0);
+  -webkit-mask-size: var(--mask-size, 100% 100%);
+  -webkit-mask-repeat: var(--mask-repeat, no-repeat);
+}
+#InVitro #Section1 .section_wrapper .section_body .mask_box .mask_box_sm {
+  position: absolute;
+  bottom: -80px;
+  left: 190px;
+  z-index: 2;
+  height: 304px;
+  width: 257px;
+  --mask-image: url(data:image/svg+xml,%3Csvg preserveAspectRatio="none" data-bbox="32.5 20 135 160" viewBox="32.5 20 135 160" height="200" width="200" xmlns="http://www.w3.org/2000/svg" data-type="shape"%3E%3Cg%3E%3Cpath d="M167.5 140L100 180l-67.5-40V60L100 20l67.5 40v80z"/%3E%3C/g%3E%3C/svg%3E%0A);
+  --mask-position: 0% 0%;
+  --mask-size: 100% 100%;
+  --mask-repeat: no-repeat;
+  -webkit-mask-image: var(--mask-image, none);
+  -webkit-mask-position: var(--mask-position, 0);
+  -webkit-mask-size: var(--mask-size, 100% 100%);
+  -webkit-mask-repeat: var(--mask-repeat, no-repeat);
+}
+#InVitro #Section1 .section_wrapper .section_body .content_box {
+  width: 699px;
+  position: absolute;
+  margin: 0px 0px 62px calc((100% - 980px) * 0.5);
+  left: 347px;
+  grid-area: 3/1/4/2;
+  justify-self: start;
+  align-self: start;
+  top: 120px;
+}/*# sourceMappingURL=InVitro.css.map */
