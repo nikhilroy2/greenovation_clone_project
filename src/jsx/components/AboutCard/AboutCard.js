@@ -79,7 +79,6 @@ function AboutCard(props) {
             </div>
             <div className="map_iframe">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2713.3504645623475!2d7.557480499999999!3d47.1509901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e28fad4e27de7%3A0x9bad505f4bb6a116!2sGreenovation!5e0!3m2!1sde!2sbd!4v1663923471183!5m2!1sde!2sbd" width="100%" height={600} style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
-
             </div>
         </div>
     );

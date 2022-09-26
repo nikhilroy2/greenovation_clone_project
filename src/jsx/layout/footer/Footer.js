@@ -11,11 +11,11 @@ function Footer(props) {
                 </g>
             </svg>,
             link: '#',
-            
+
         },
         {
             id: 2,
-            icon: <svg fill='white' data-bbox="20 44.5 160 110.999" viewBox="0 0 200 200" height={28} xmlns="http://www.w3.org/2000/svg" data-type="shape">
+            icon: <svg fill='white' data-bbox="20 44.5 160 110.999" viewBox="0 0 200 200" height={35} width={35} xmlns="http://www.w3.org/2000/svg" data-type="shape">
                 <g>
                     <path d="M109.336 104.331a17.481 17.481 0 0 1-18.671 0L20.222 59.784H20v78.442c0 9.54 7.784 17.273 17.386 17.273h125.228c9.602 0 17.386-7.733 17.386-17.273V59.784h-.222l-70.442 44.547z" />
                     <path d="M22.578 44.5l.215.125 68.173 43.111a16.917 16.917 0 0 0 18.069 0l68.173-43.111.215-.125H22.578z" />
@@ -49,37 +49,37 @@ function Footer(props) {
         {
             id: 1,
             name: 'Bankverbindung',
-            link: '#',
+            link: '/bankverbindung',
         },
         {
             id: 2,
             name: `FAQ's`,
-            link: '#'
+            link: '/faq'
         },
         {
             id: 3,
             name: `Job's`,
-            link: '#'
+            link: '/jobs'
         },
         {
             id: 4,
             name: `Geschäftspräsentation`,
-            link: '#'
+            link: 'https://www.greenovation.ch/_files/ugd/670a64_54641ef184d04a469434a0e83a622b2a.pdf'
         },
         {
             id: 5,
             name: `AGB's`,
-            link: '#'
+            link: '/agb'
         },
         {
             id: 6,
             name: `Datenschutz`,
-            link: '#'
+            link: '/datenschutz'
         },
         {
             id: 7,
             name: `Impressum`,
-            link: '#'
+            link: '/impressum'
         },
     ]
     return (
@@ -110,7 +110,7 @@ function Footer(props) {
                             <li key={v.id} className="m-3 mx-4 mb-1 pb-4">
                                 {v.id === 3 || v.id === 4 ?
 
-                                    <Link to={v.link} className="text-white" style={{textDecoration: 'underline'}}>
+                                    <Link to={v.link} className="text-white" style={{ textDecoration: 'underline' }}>
                                         {v.name}
                                     </Link>
 
@@ -140,3 +140,4 @@ function Footer(props) {
 }
 
 export default Footer;
+
