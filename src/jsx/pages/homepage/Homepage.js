@@ -540,7 +540,7 @@ const Section8 = () => {
 
         </div>
         <div className="section_body">
-            <p className="font_8" style={{ fontSize: '16px' }}>Selbstverständlich haben wir alle möglichen Risiken versichert, damit ihr Investment und ihre Einkünfte abgesichert sind:</p>
+            <p className="font_8 font_size_16">Selbstverständlich haben wir alle möglichen Risiken versichert, damit ihr Investment und ihre Einkünfte abgesichert sind:</p>
             <ul className="font_8 color_23 content_list" style={{ fontSize: '18px', fontWeight: 'bold', listStyle: 'disc' }}>
                 <li>
                     <p className="font_8 py-0 my-0" style={{ fontSize: '18px' }}><span style={{ letterSpacing: '0.05em' }}><span style={{ fontSize: '18px' }}><span style={{ fontWeight: 'bold' }}><span className="color_23">Ertragsausfall&nbsp;</span></span></span></span></p>
