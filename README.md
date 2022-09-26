@@ -1,6 +1,6 @@
 need to clone this website: https://www.greenovation.ch/
 
-<ul>
+<ol>
     <li>
         <a href="https://greennl.netlify.app/">https://greennl.netlify.app/</a>
     </li>
@@ -40,4 +40,4 @@ need to clone this website: https://www.greenovation.ch/
     <li>
         <a href="https://greennl.netlify.app/impressum">https://greennl.netlify.app/impressum</a>
     </li>
-</ul>
+</ol>
