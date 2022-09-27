@@ -1,0 +1,126 @@
+#Faq {
+    .search_wrapper {
+        h2 {
+            color: rgb(0, 0, 0);
+            font: 18px / 1.4em montserrat, sans-serif;
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+
+        .btn_search {
+            &:hover {
+                opacity: .7;
+            }
+        }
+
+        .search_action_view {
+
+            position: relative;
+
+            .action_input {
+                border: 2px solid #58A9EF;
+
+                &.action_view {
+                    transform-origin: right;
+                    animation: 1s action_view;
+
+                    @keyframes action_view {
+                        0% {
+                            transform: scaleX(.4);
+                        }
+
+                        100% {
+                            transform: scaleX(1);
+                        }
+                    }
+                }
+            }
+
+            .btn_search {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 2;
+            }
+
+            .search_input,
+            .search_input:focus {
+                border: none;
+                outline: none;
+                box-shadow: none;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .faq_tab_wrapper {
+        .tab_item {
+            font-size: 14px;
+            font-family: montserrat, sans-serif;
+
+            &.active_tab {
+                text-shadow: 0 0 !important;
+                pointer-events: none;
+                color: rgb(8, 196, 13) !important;
+                font-weight: bolder;
+            }
+        }
+
+    }
+
+    .faq_accordion {
+        .accordion {
+            *{
+                border-radius: 0px!important;
+            }
+            .accordion_item {
+
+                padding: 15px 0px;
+
+                .accordion_btn {
+                    width: 100%;
+                    font: 18px / 1.4em montserrat, sans-serif;
+                    text-align: left;
+                    min-height: 50px;
+                    display: flex;
+                    align-items: center;
+
+                }
+            }
+
+            .accordion_description {
+                font: 16px / 1.4em montserrat, sans-serif;
+                padding: 0 2px 30px;
+
+
+            }
+        }
+
+        .MuiPaper-elevation {
+            box-shadow: none !important;
+            border-bottom: 1px solid rgb(8, 196, 13) !important;
+            &::before{
+                display: none;
+            }
+        }
+
+        .Mui-expanded {
+            padding: 0px !important;
+        }
+
+        .MuiAccordionDetails-root {
+            padding: 0 2px 30px;
+        }
+
+        .MuiButtonBase-root {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .nl_mui {
+            min-height: 80px;
+        }
+
+    }
+}
