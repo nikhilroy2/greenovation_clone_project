@@ -58,6 +58,26 @@
   color: rgb(8, 196, 13) !important;
   font-weight: bolder;
 }
+#Faq .faq_accordion {
+  -webkit-animation: 0.5s ease faq_accordion;
+          animation: 0.5s ease faq_accordion;
+}
+@-webkit-keyframes faq_accordion {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes faq_accordion {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 #Faq .faq_accordion .accordion * {
   border-radius: 0px !important;
 }

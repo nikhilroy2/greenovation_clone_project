@@ -70,10 +70,24 @@
     }
 
     .faq_accordion {
-        .accordion {
-            *{
-                border-radius: 0px!important;
+        animation: .5s ease faq_accordion;
+
+        .faq_animate {
+            @keyframes faq_accordion {
+                0% {
+                    transform: translateY(200px);
+                }
+
+                100% {
+                    transform: translateY(0px);
+                }
             }
+        }
+        .accordion {
+            * {
+                border-radius: 0px !important;
+            }
+
             .accordion_item {
 
                 padding: 15px 0px;
@@ -100,7 +114,8 @@
         .MuiPaper-elevation {
             box-shadow: none !important;
             border-bottom: 1px solid rgb(8, 196, 13) !important;
-            &::before{
+
+            &::before {
                 display: none;
             }
         }
