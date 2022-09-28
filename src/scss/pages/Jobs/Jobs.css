@@ -1,0 +1,20 @@
+#Jobs {
+  min-height: 1075px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 110px;
+}
+#Jobs .content_box {
+  position: relative;
+}
+#Jobs .content_box img {
+  z-index: -1;
+  opacity: 0.6;
+}
+#Jobs .content_box p {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+}/*# sourceMappingURL=Jobs.css.map */
